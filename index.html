@@ -262,14 +262,10 @@
     <h1 class="text-body-emphasis">Zoé Ferfaille <span id="cursor">|</span></h1>
     <p class="col-lg-10 mx-auto fs-5 text-muted" id="presentations">
      
-      I've always enjoyed studying human behavior and cognitive sciences. I'm also interested in technology and computer science, and I like to think about the interaction between people and machines in order to perfect them. This is why it was natural for me to turn to UX Design during my studies. </br> </br> I'm currently finishing my final year of engineering school in Cognitics, and doing my end-of-studies internship at Alteia, a company specializing in visual Artificial Intelligence. This experience confirmed my desire to pursue UX Design and user-centered design after school.  </br> </br> I'm therefore looking for a job opportunity as a UX Designer, preferably in the AI or healthcare field, starting in September.
+      I've always enjoyed studying human behavior and cognitive sciences. I'm also interested in technology and computer science, and I like to think about the interaction between people and machines in order to perfect them. This is why it was natural for me to turn to UX Design during my studies. </br> </br> I'm currently finishing my final year of engineering school in Cognitics, and doing my end-of-studies internship at <a href="https://alteia.com/" target="_blank"> Alteia</a>, a company specializing in visual Artificial Intelligence. This experience confirmed my desire to pursue UX Design and user-centered design after school.  </br> </br> I'm therefore looking for a job opportunity as a UX Designer, preferably in the AI or healthcare field, starting in September.
     </p>
   
-      <div class="container px-6"> 
-        <a href="https://alteia.com/" target="_blank">
-          <img src="alteia.png" class="img-fluid border rounded-3 shadow-lg mb-4 mt-4" alt="Example image" width="100" height="50" loading="lazy">
-        </a>
-      </div> 
+      
   </div>
 </div>
 
@@ -322,7 +318,7 @@
               <img src="cardStage3.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
               <div class="card-body">
                 <h4 class="card-title" py-1 id="titreStage3">Final year internship - UX Design for a visual AI platform</h4>
-                <p class="card-text py-2"  id="texteStage3">As part of my 3rd year internship at Alteia, I joined the UX Design team in the product department.  My role is to participate in the improvement of functionalities and modules on Alteia's Eather platform. I've been able to deepen my knowledge of UX design and layout. <br> <br> <br> <br>
+                <p class="card-text py-2"  id="texteStage3">As part of my 3rd year internship at Alteia, I joined the UX Design team in the product department.  My role is to participate in the improvement of functionalities and modules on Alteia's Eather platform. I've been able to deepen my knowledge of UX design and layout. <br> <br> <br> 
                 </p>
 
                 <div class="d-flex justify-content-between align-items-center">
@@ -847,6 +843,10 @@
     const TRIModalLabel = document.getElementById('TRIModalLabel');
     var presTRI = document.getElementById("presTRI");
     const btn1TRI =  document.getElementById("btn1TRI");
+	var lienAlteia = document.createElement("a");
+	lienAlteia.href = "https://alteia.com/";
+	lienAlteia.textContent = "Alteia";
+	lienAlteia.target = "_blank"; // Ajout de l'attribut target="_blank"
 
 
 
@@ -867,7 +867,7 @@
       menuSoftSkills[2].innerHTML = "Empathie";
       menuSoftSkills[3].innerHTML = "Inventivité";
       bouton_cv.innerHTML = 'Voir mon CV';
-      presentationContenu.innerHTML ="J'ai toujours aimé étudier le comportement humain et les sciences cognitives. Egalement intéréssée par les technologies et l'informatique, j'aime réflèchir aux intéractions entre hommes et machines afin de les parfaire. C'est donc tout naturellement que je me suis tournée vers l'UX Design pendant mes études. </br> </br> Actuellement en train de finir ma dernière année d'école d'ingénieur en Cognitique, j'effectue mon stage de fin d'études à Alteia, une entreprise spécialisée dans l'Intelligence Artificielle visuelle. Cette expérience me conforte dans mon envie de poursuivre dans l'UX Design et la conception centrée utilisateurs après l'école. </br> </br>  Je recherche donc une opportunité pour un emploi en tant qu' UX Designeur dans le domaine de l'IA ou de la santé de préfèrence, dès le mois de Septembre.";
+      presentationContenu.innerHTML ="J'ai toujours aimé étudier le comportement humain et les sciences cognitives. Egalement intéréssée par les technologies et l'informatique, j'aime réflèchir aux intéractions entre hommes et machines afin de les parfaire. C'est donc tout naturellement que je me suis tournée vers l'UX Design pendant mes études. </br> </br> Actuellement en train de finir ma dernière année d'école d'ingénieur en Cognitique, j'effectue mon stage de fin d'études à "+ lienAlteia.outerHTML + " , une entreprise spécialisée dans l'Intelligence Artificielle visuelle. Cette expérience me conforte dans mon envie de poursuivre dans l'UX Design et la conception centrée utilisateurs après l'école. </br> </br>  Je recherche donc une opportunité pour un emploi en tant qu' UX Designeur dans le domaine de l'IA ou de la santé de préfèrence, dès le mois de Septembre.";
       presentationEnsc.innerHTML ="Diplôme d'ingénieur à l'Ecole Nationale Supérieure de Cognitique (ENSC) de Bordeaux  ";
       presentationMIASHS.innerHTML="Licence de Mathématiques et Informatique appliquées aux Sciences Humaines et Sociales (MIASHS) spécialité sciences cognitices à l'Université de Lille";
       descriptionLaval.innerHTML="Programme d'échange universitaire dans le département Génie Logiciel de l'université Laval à Québec";
@@ -901,7 +901,7 @@
       realisations.innerHTML = "Réalisations";
       competences.innerHTML = "Compétences"; 
       titreTRI.innerHTML = "Organisation du contenu d’une application";
-      texteTRI.innerHTML ="Dans le cadre de la création d’une application pour le club de jeux de société de notre école, nous avons été missionnés pour penser l’organisation de l’information au sein du menu. Nous avons choisi la méthode du tri de cartes afin de classifier et d’organiser au mieux les jeux pour les utilisateurs. <br><br><br><br><br><br><br>";  
+      texteTRI.innerHTML ="Dans le cadre de la création d’une application pour le club de jeux de société de notre école, nous avons été missionnés pour penser l’organisation de l’information au sein du menu. Nous avons choisi la méthode du tri de cartes afin de classifier et d’organiser au mieux les jeux pour les utilisateurs. <br><br><br><br><br><br>";  
       Stage3ModalLabel.innerHTML = "UX Design pour une plateforme d’IA visuelle";
       presStage3.src = "stage3FR.png";
 
@@ -950,7 +950,7 @@
       menuItems[3].innerHTML = 'Skills';
      
       bouton_cv.innerHTML = 'View CV';
-      presentationContenu.innerHTML ="I've always enjoyed studying human behavior and cognitive sciences. I'm also interested in technology and computer science, and I like to think about the interaction between people and machines in order to perfect them. This is why it was natural for me to turn to UX Design during my studies. </br> </br> I'm currently finishing my final year of engineering school in Cognitics, and doing my end-of-studies internship at Alteia, a company specializing in visual Artificial Intelligence. This experience confirmed my desire to pursue UX Design and user-centered design after school.  </br> </br>  I'm therefore looking for a job opportunity as a UX Designer, preferably in the AI or healthcare field, starting in September.";
+      presentationContenu.innerHTML ="I've always enjoyed studying human behavior and cognitive sciences. I'm also interested in technology and computer science, and I like to think about the interaction between people and machines in order to perfect them. This is why it was natural for me to turn to UX Design during my studies. </br> </br> I'm currently finishing my final year of engineering school in Cognitics, and doing my end-of-studies internship at "+ lienAlteia.outerHTML + ", a company specializing in visual Artificial Intelligence. This experience confirmed my desire to pursue UX Design and user-centered design after school.  </br> </br>  I'm therefore looking for a job opportunity as a UX Designer, preferably in the AI or healthcare field, starting in September.";
       menuUX[0].innerHTML = 'User-Centered Design';
       menuUX[2].innerHTML = 'Mockup - Figma';
       menuUX[3].innerHTML = "HMI Design";
