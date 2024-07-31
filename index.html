@@ -13,6 +13,15 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 		<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 		<style>
+			.card-img-top {
+				max-height: 500px; /* Remplace 200px par la hauteur maximale souhaitée */
+				max-width: 350px;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: auto;
+			}
+			
 			.bd-placeholder-img
 			{
 				font-size: 1.125rem;
@@ -306,11 +315,14 @@
 			<div id="realisations"></div>
 			<div class="album py-5 ">
 				<div class="container">
-					<h2 class="pb-5" id="div_realisation">Projects</h2>
+					<h2 class="pb-3" id="div_realisation">Projects</h2>
+				
+					<h5 class="d-inline-block mb-1  opacity-60"> UX Design ✏️</h5>
+						<hr class="border border-info border-2 opacity-50">
 					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
 						<div class="col">
 							<div class="card shadow-sm">
-								<img src="cardStage3.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
+								<img src="Map.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
 								<div class="card-body">
 									<h4 class="card-title" py-1 id="titreStage3">Final year internship - UX Design for a visual AI platform</h4>
 									<div class="container-md gap-1  py-2">
@@ -352,7 +364,7 @@
 						</div>
 						<div class="col">
 							<div class="card shadow-sm">
-								<img src="cardPFE.jpg" class="img-fluid bd-placeholder-img card-img-top" alt="...">
+								<img src="ammenagement.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
 								<div class="card-body">
 									<h4 class="card-title"py-1 id="titrePFE">Final year project : site design</h4>
 									<div class="container-md  gap-1  py-2">
@@ -435,46 +447,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col">
-							<div class="card shadow-sm">
-								<img src="cardTER.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
-								<div class="card-body">
-									<h4 class="card-title py-1" id="titreTER">Research project - Perception of objects in a 3D environment</h4>
-									<div class="container-md  gap-1  py-2">
-										<span class="badge text-bg-info rounded-pill">Project</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Research</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">CognitiveScience</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">PerceptionMotricity</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">LaTeX</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">RStudio</span>
-									</div>
-									<p class="card-text py-2" id="texteTER">
-										I worked for several months alongside a cognitive science researcher on the study of the link between the perception of objects in a 3D environment and motor skills. I had the opportunity to review the literature, organize the experiments, analyze the data and write the report in the form of a scientific article. My research topic was: The effect of image resolution on the perception of objects in a virtual environment. This enabled me to study how humans perceive objects in a virtual environment.
-									</p>
-									<div class="d-flex justify-content-between align-items-center">
-										<div class="btn-group py-1">
-											<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#TERModal" id="voirTER">Read more</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="modal fade" id="TERModal" tabindex="-1" aria-labelledby="TERModalLabel" aria-hidden="true">
-							<div class="modal-dialog modal-lg  modal-dialog-scrollable">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h1 class="modal-title fs-5" id="TERModalLabel">Perception of objects in a 3D environment</h1>
-										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-									</div>
-									<div class="modal-body">
-										<img src="TEREN.png" class="img-fluid" alt="..." id="presTER">
-									</div>
-									<div class="modal-footer d-flex justify-content-center gap-2">
-										<a href="https://drive.google.com/file/d/1C6zXEQsYeUnD4hx28ypI33Q-h9xz6Jac/view" target="_blank"><button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn1TER">Report</button></a>
-									</div>
-								</div>
-							</div>
-						</div>
+						
 						<div class="col">
 							<div class="card shadow-sm">
 								<img src="cardTriCarte.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
@@ -501,89 +474,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="col">
-							<div class="card shadow-sm">
-								<img src="cardStage2.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
-								<div class="card-body">
-									<h4 class="card-title py-1" id="titreStage2">Second year placement - Research into eating behavior</h4>
-									<div class="container-md  gap-1  py-2">
-										<span class="badge text-bg-info rounded-pill">Internship</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Research</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">FoodScience</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Immersion</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Psycho</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Python</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">RStudio</span>
-									</div>
-									<p class="card-text py-2" id="texteStage2">
-										I was in charge of a research project on eating behavior. It was a call for expressions of interest from the Lille metropolitan area, in collaboration with JUNIA and Anthropo-Lab. JUNIA develops expertise and services around sensory analysis, while Anthropo-Lab is an experimental anthropology laboratory that aims to understand and develop human behavior. My role was to identify physiological markers that reflect appreciation and emotions during an act of consumption. My tasks were to carry out a literature review, set up an experimental protocol in an immersive room, analyze the results and present them.
-									</p>
-									<div class="d-flex justify-content-between align-items-center">
-										<div class="btn-group">
-											<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Stage2Modal" id="voirStage2">Read more</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="modal fade" id="Stage2Modal" tabindex="-1" aria-labelledby="Stage2ModalLabel" aria-hidden="true">
-							<div class="modal-dialog modal-lg  modal-dialog-scrollable">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h1 class="modal-title fs-5" id="Stage2ModalLabel">Second year placement - Research into eating behavior</h1>
-										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-									</div>
-									<div class="modal-body">
-										<img src="stage2EN.png" class="img-fluid" alt="..." id="presStage2">
-									</div>
-									<div class="modal-footer d-flex justify-content-center gap-2">
-										<a href="https://docs.google.com/document/d/1ZViDLfTyY3a9MSZ0Gjz8YBHy8ijyGiYGfdVEjjE9QxQ/edit#heading=h.okyee39b0t99" target="_blank"><button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn1Stage2">Report</button></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card shadow-sm">
-								<img src="caardStage1.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
-								<div class="card-body">
-									<h4 class="card-title py-1" id="titreStage1">First year placement - OpenBCI headset demonstrator</h4>
-									<div class="container-md  gap-1  py-2">
-										<span class="badge text-bg-info rounded-pill">Internship</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Research</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">CognitiveScience</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Python</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">EEG</span>
-									</div>
-									<p class="card-text py-2" id="texteStage1">
-										I spent a month working alongside a research engineer in a cognitive science laboratory, Scalab, in Lille. My tasks were to get to grips with an OpenBCI EEG headset, draw up a data sheet and produce a demonstrator. I was able to use my skills in the Python language to develop a demonstrator capable of broadcasting live data from the headset, displaying periodic visual stimuli on the screen, and recording and processing the data in graph form. 
-										<br>
-										<br>
-									</p>
-									<div class="d-flex justify-content-between align-items-center">
-										<div class="btn-group py-1">
-											<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Stage1Modal" id="voirStage1">Read more</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="modal fade" id="Stage1Modal" tabindex="-1" aria-labelledby="Stage1ModalLabel" aria-hidden="true">
-							<div class="modal-dialog modal-lg  modal-dialog-scrollable">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h1 class="modal-title fs-5" id="Stage1ModalLabel">OpenBCI headset demonstrator</h1>
-										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-									</div>
-									<div class="modal-body">
-										<img src="stage1EN.png" class="img-fluid" alt="..." id="presStage1">
-									</div>
-									<div class="modal-footer d-flex justify-content-center gap-2">
-										<a href="https://docs.google.com/document/u/1/d/1Fok7RhiAk4yhXiB-a9YoCXeTK-VQ9idydssgww2hLZg/edit?usp=sharing" target="_blank"><button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn1Stage1">Report</button></a>
-										<a href="https://drive.google.com/drive/u/1/folders/1jE4TlQ1Rp05i5V8IjfysHxpT27hdH5DL" target="_blank"><button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn2Stage1">Demonstrator Code</button></a>
-									</div>
-								</div>
-							</div>
-						</div>
+						
+						
 						<div class="col">
 							<div class="card shadow-sm">
 								<img src="cardUXCleaner.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
@@ -624,7 +516,142 @@
 							</div>
 						</div>
 					</div>
+					<br><br>
+				
+					<h5 class="d-inline-block mb-1  opacity-60" id="titre_section2" > Cognitive Science research 🧠</h5>
+						<hr class="border border-info border-2 opacity-50">
+
+						<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+
+							<div class="col">
+								<div class="card shadow-sm">
+									<img src="cardTER.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
+									<div class="card-body">
+										<h4 class="card-title py-1" id="titreTER">Research project - Perception of objects in a 3D environment</h4>
+										<div class="container-md  gap-1  py-2">
+											<span class="badge text-bg-info rounded-pill">Project</span>
+											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Research</span>
+											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">CognitiveScience</span>
+											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">PerceptionMotricity</span>
+											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">LaTeX</span>
+											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">RStudio</span>
+										</div>
+										<p class="card-text py-2" id="texteTER">
+											I worked for several months alongside a cognitive science researcher on the study of the link between the perception of objects in a 3D environment and motor skills. I had the opportunity to review the literature, organize the experiments, analyze the data and write the report in the form of a scientific article. My research topic was: The effect of image resolution on the perception of objects in a virtual environment. This enabled me to study how humans perceive objects in a virtual environment.
+										</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<div class="btn-group py-1">
+												<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#TERModal" id="voirTER">Read more</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="TERModal" tabindex="-1" aria-labelledby="TERModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-lg  modal-dialog-scrollable">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h1 class="modal-title fs-5" id="TERModalLabel">Perception of objects in a 3D environment</h1>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											<img src="TEREN.png" class="img-fluid" alt="..." id="presTER">
+										</div>
+										<div class="modal-footer d-flex justify-content-center gap-2">
+											<a href="https://drive.google.com/file/d/1C6zXEQsYeUnD4hx28ypI33Q-h9xz6Jac/view" target="_blank"><button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn1TER">Report</button></a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="card shadow-sm">
+									<img src="cardStage2.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
+									<div class="card-body">
+										<h4 class="card-title py-1" id="titreStage2">Second year placement - Research into eating behavior</h4>
+										<div class="container-md  gap-1  py-2">
+											<span class="badge text-bg-info rounded-pill">Internship</span>
+											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Research</span>
+											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">FoodScience</span>
+											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Immersion</span>
+											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Psycho</span>
+											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Python</span>
+											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">RStudio</span>
+										</div>
+										<p class="card-text py-2" id="texteStage2">
+											I was in charge of a research project on eating behavior. It was a call for expressions of interest from the Lille metropolitan area, in collaboration with JUNIA and Anthropo-Lab. JUNIA develops expertise and services around sensory analysis, while Anthropo-Lab is an experimental anthropology laboratory that aims to understand and develop human behavior. My role was to identify physiological markers that reflect appreciation and emotions during an act of consumption. My tasks were to carry out a literature review, set up an experimental protocol in an immersive room, analyze the results and present them.
+										</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<div class="btn-group">
+												<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Stage2Modal" id="voirStage2">Read more</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="Stage2Modal" tabindex="-1" aria-labelledby="Stage2ModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-lg  modal-dialog-scrollable">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h1 class="modal-title fs-5" id="Stage2ModalLabel">Second year placement - Research into eating behavior</h1>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											<img src="stage2EN.png" class="img-fluid" alt="..." id="presStage2">
+										</div>
+										<div class="modal-footer d-flex justify-content-center gap-2">
+											<a href="https://docs.google.com/document/d/1ZViDLfTyY3a9MSZ0Gjz8YBHy8ijyGiYGfdVEjjE9QxQ/edit#heading=h.okyee39b0t99" target="_blank"><button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn1Stage2">Report</button></a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="card shadow-sm">
+									<img src="caardStage1.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
+									<div class="card-body">
+										<h4 class="card-title py-1" id="titreStage1">First year placement - OpenBCI headset demonstrator</h4>
+										<div class="container-md  gap-1  py-2">
+											<span class="badge text-bg-info rounded-pill">Internship</span>
+											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Research</span>
+											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">CognitiveScience</span>
+											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Python</span>
+											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">EEG</span>
+										</div>
+										<p class="card-text py-2" id="texteStage1">
+											I spent a month working alongside a research engineer in a cognitive science laboratory, Scalab, in Lille. My tasks were to get to grips with an OpenBCI EEG headset, draw up a data sheet and produce a demonstrator. I was able to use my skills in the Python language to develop a demonstrator capable of broadcasting live data from the headset, displaying periodic visual stimuli on the screen, and recording and processing the data in graph form. 
+											<br>
+											<br>
+										</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<div class="btn-group py-1">
+												<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Stage1Modal" id="voirStage1">Read more</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="Stage1Modal" tabindex="-1" aria-labelledby="Stage1ModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-lg  modal-dialog-scrollable">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h1 class="modal-title fs-5" id="Stage1ModalLabel">OpenBCI headset demonstrator</h1>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											<img src="stage1EN.png" class="img-fluid" alt="..." id="presStage1">
+										</div>
+										<div class="modal-footer d-flex justify-content-center gap-2">
+											<a href="https://docs.google.com/document/u/1/d/1Fok7RhiAk4yhXiB-a9YoCXeTK-VQ9idydssgww2hLZg/edit?usp=sharing" target="_blank"><button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn1Stage1">Report</button></a>
+											<a href="https://drive.google.com/drive/u/1/folders/1jE4TlQ1Rp05i5V8IjfysHxpT27hdH5DL" target="_blank"><button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn2Stage1">Demonstrator Code</button></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
 				</div>
+				
 			</div>
 			<div>
 				<div class="modal fade" id="TRIModal" tabindex="-1" aria-labelledby="TRIModalLabel" aria-hidden="true">
@@ -641,8 +668,10 @@
 								<a href="https://docs.google.com/presentation/d/1kPaVPY2VHFdejDOfzAkkYYbsYJwrJj_kt1X3JWxw3X4/edit" target="_blank"><button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn1TRI">Presentation</button></a>
 							</div>
 						</div>
-					</div>
+					</div>		
 				</div>
+
+
 				<div class="b-example-divider"></div>
 				<div id="competences"></div>
 				<div class="container px-4 py-5" id="hanging-icons">
@@ -716,7 +745,7 @@
 									<use xlink:href="#bootstrap"/>
 								</svg>
 							</a>
-							<span class="mb-3 mb-md-0 text-body-secondary">&copy; Coded with ❤️ by Zoé Ferfaille - zoe.ferfaille@gmail.com</span>
+							<span class="mb-3 mb-md-0 text-body-secondary">&copy; Designed and coded with ❤️ by Zoé Ferfaille - zoe.ferfaille@gmail.com</span>
 						</div>
 						<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
 							<li class="ms-3">
@@ -808,6 +837,7 @@
 	lienAlteia.textContent = "Alteia";
 	lienAlteia.target = "_blank"; // Ajout de l'attribut target="_blank"
   const soustitre = document.getElementById("sous-titre");
+	const titre_section2 = document.getElementById('titre_section2');
 
 
 
@@ -905,6 +935,7 @@ voirTri.innerHTML = "En voir plus";
       
       lien_cv.href = "https://drive.google.com/file/d/1s-UCSX7P8ll6t-VQW9PQVIjfHXRHUUp9/view?usp=sharing";
 	  soustitre.innerHTML = 'UX Designer dans l\'Intelligence Artificielle Visuelle <span id="cursor">|</span>';
+	  titre_section2.innerHTML ="Recherche en sciences cognitives 🧠";
     
     } else if (lang === 'en') {
       titre_quebec.innerHTML = "jan-may 2023";
@@ -996,6 +1027,7 @@ voirTri.innerHTML = "En voir plus";
 
       lien_cv.href = "https://drive.google.com/file/d/13jBdmMUhLHTPg0-8g5QvudiotTO8gL6J/view?usp=sharing";
       soustitre.innerHTML = 'UX Designer in Visual Artificial Intelligence <span id="cursor">|</span>';
+	  titre_section2.innerHTML ="Cognitive science research 🧠";
       
     } 
   }
