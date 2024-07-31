@@ -23,7 +23,7 @@
 			}
 
 			.card {
-				transition: transform 0.3s, box-shadow 0.3s;
+				transition: transform 0.2s, box-shadow 0.3s;
 			}
 
 			.card:hover {
@@ -132,7 +132,20 @@
 					opacity: 0;
 				}
 			}
+			
+			.skills-badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+			}
 
+			.skills-badge {
+				font-size: 0.9rem;
+				padding: 0.5rem 1rem;
+				color: #0087a2; /* Default text color for all badges */
+				background-color: #eaf4f4;
+				
+			}
 			
 		
 			
@@ -277,10 +290,10 @@
 			<div class="b-example-divider"></div>
 
 			<div class="container px-4 py-5" id="featured-3">
-				<h2 class="pb-5" id="div_education">Education</h2>
-				<div class="row g-4 py-1 row-cols-1 row-cols-lg-3">
+				<h2 class="pb-3" id="div_education">Education</h2>
+				<div class="row g-4 row-cols-1 row-cols-lg-3">
 				  <div class="feature col">
-					<div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+					<div class="feature-icon d-inline-flex align-items-center justify-content-center  bg-gradient fs-2 mb-3">
 						<img src="ensc.png" width="130" height="100" class="rounded float-start" alt="...">
 					</div>
 					<h3 class="fs-2 text-body-emphasis">2021-2024</h3>
@@ -293,7 +306,7 @@
 					</a>
 				  </div>
 				  <div class="feature col">
-					<div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+					<div class="feature-icon d-inline-flex align-items-center justify-content-center  bg-gradient fs-2 mb-3">
 						<img  src="lille-univ.png" width="130" height="100" class="rounded float-start" alt="...">
 					</div>
 					<h3 class="fs-2 text-body-emphasis">2019-2021</h3>
@@ -306,7 +319,7 @@
 					</a>
 				  </div>
 				  <div class="feature col">
-					<div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+					<div class="feature-icon d-inline-flex align-items-center justify-content-center  bg-gradient fs-2 mb-3">
 						<img  src="ulaval2.png" width="130" height="100" class="rounded float-start" alt="...">
 					</div>
 					<h3 class="fs-2 text-body-emphasis" id="titre_quebec">jan-may 2023</h3>
@@ -328,7 +341,7 @@
 				<div class="container">
 					<h2 class="pb-3" id="div_realisation">Projects</h2>
 				
-					<h5 class="d-inline-block mb-1  opacity-60"> UX Design </h5>
+					<h5 class="d-inline-block mb-1 pt-3 opacity-60"> UX Design </h5>
 						<hr class="border border-info border-2 opacity-50"> <br>
 					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
@@ -619,53 +632,58 @@
 				<div id="competences"></div>
 				<div class="container px-4 py-5" id="hanging-icons">
 					<h2 class="pb-2" id="div_competences">Skills</h2>
-					<div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-						<div class="col d-flex align-items-start">
-							
-							<div>
-								<h3 class="fs-2 text-body-emphasis" id="colonneInfo">Computing science </h3> <br>
-								<ul class="list-group">
-									<li class="list-group-item">Python</li>
-									<li class="list-group-item">C#</li>
-									<li class="list-group-item">HTML5</li>
-									<li class="list-group-item">CSS</li>
-									<li class="list-group-item">JavaScript</li>
-									<li class="list-group-item">Git</li>
-									<li class="list-group-item">PHP</li>
-									<li class="list-group-item">SQL</li>
-									<li class="list-group-item">RStudio</li>
-									<li class="list-group-item">Kotlin</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col d-flex align-items-start">
-							
-							<div>
-								<h3 class="fs-2 text-body-emphasis" id="colonneUX">Human factors </h3> <br>
-								<ul class="list-group" id="menu_UX">
-									<li class="list-group-item">User-Centered Design</li>
-									<li class="list-group-item">UX - UI Design</li>
-									<li class="list-group-item">Mockup - Figma</li>
-									<li class="list-group-item">HMI Design</li>
-									<li class="list-group-item">Project Management</li>
-              <li class="list-group-item">Accessibility</li>
+					<div class="row g-5 py-4 row-cols-1 row-cols-lg-3">
 
-								</ul>
-							</div>
-						</div>
 						<div class="col d-flex align-items-start">
 							
 							<div>
-								<h3 class="fs-2 text-body-emphasis" id="colonneSoftSkills">Soft skills</h3> <br>
-								<ul class="list-group" id="menuSoftSkills">
-									<li class="list-group-item">Curiosity</li>
-									<li class="list-group-item">Adaptability</li>
-									<li class="list-group-item">Empathy</li>
-									<li class="list-group-item">Inventiveness</li>
-								</ul>
+								<h3 class="fs-3" id="colonneUX">Human factors </h3> <br>
+								<div class="skills-badge-container" id="menu_UX">
+									<span class="badge skills-badge html">User-Centered Design</span>
+									<span class="badge skills-badge html">UX - UI Design</span>
+									<span class="badge skills-badge html">Mockup - Figma</span>
+									<span class="badge skills-badge html">HMI Design</span>
+									<span class="badge skills-badge html">Project Management</span>
+									<span class="badge skills-badge html">HTML</span>
+								
+								</div>
 							</div>
 						</div>
-					</div>
+
+						<div class="col d-flex align-items-start">
+							
+							<div>
+								<h3 class="fs-3" id="colonneInfo">Computing science </h3> <br>
+								
+								<div class="skills-badge-container">
+									<span class="badge skills-badge html">Python</span>
+									<span class="badge skills-badge html">C#</span>
+									<span class="badge skills-badge html">HTML5</span>
+									<span class="badge skills-badge html">CSS</span>
+									<span class="badge skills-badge html">Javascript</span> 
+									<span class="badge skills-badge html">PHP</span>
+									<span class="badge skills-badge html">SQL</span>
+									<span class="badge skills-badge html">Kotlin</span>
+								
+								</div>
+							</div>
+						</div>
+						
+						<div class="col d-flex align-items-start">
+							
+							<div>
+								<h3 class="fs-3" >Soft skills</h3> <br>
+								<div class="skills-badge-container" id="menuSoftSkills">
+									<span class="badge skills-badge html">Curiosity</span>
+									<span class="badge skills-badge html">Adaptability</span>
+									<span class="badge skills-badge html">Empathy</span>
+									<span class="badge skills-badge html">Inventiveness</span>
+
+							</div>
+						</div>
+						
+						</div>
+				</div>
 				</div>
 				<div class="b-example-divider"></div>
 				<div class="container">
@@ -699,8 +717,8 @@
     const lien_cv = document.getElementById('lien_cv');
     
     const menuItems = document.querySelectorAll('#menu a');
-    const menuUX = document.querySelectorAll('#menu_UX li');
-    const menuSoftSkills = document.querySelectorAll('#menuSoftSkills li');
+    const menuUX = document.querySelectorAll('#menu_UX .skills-badge');
+    const menuSoftSkills = document.querySelectorAll('#menuSoftSkills .skills-badge');
     const presentationContenu = document.getElementById('presentations');
     const presentationEnsc = document.getElementById('descriptionEnsc');
     const presentationMIASHS = document.getElementById('descriptionMIASHS');
