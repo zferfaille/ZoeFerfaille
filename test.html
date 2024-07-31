@@ -29,7 +29,6 @@
 			.card:hover {
 				transform: scale(1.015) translateY(-10px);
 				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-				 border: 1px solid #0dcaf0; 
 			}
 			
 			.bd-placeholder-img
@@ -254,7 +253,7 @@
 				<div class="p-5 text-center bg-body-tertiary rounded-3">
 					<img class="d-block mx-auto mb-4" src="avatar.png" alt="" width="150" height="150">
 					<h1 class="text-body-emphasis">Zoé Ferfaille</h1>
-					<h3 id="soustitre">UX Designer in Visual Artificial Intelligence <span id="cursor">|</span></h3>
+					<h3 id="sous-titre">UX Designer in Visual Artificial Intelligence <span id="cursor">|</span></h3>
 					<br>
 					<p class="col-lg-10 mx-auto fs-5 text-muted" id="presentations">
 						I've always enjoyed studying human behavior and cognitive sciences. I'm also interested in technology and computer science, and I like to think about the interaction between people and machines in order to perfect them. This is why it was natural for me to turn to UX Design during my studies. 
@@ -325,18 +324,14 @@
 			<div id="realisations"></div>
 			<div class="album py-5 ">
 				<div class="container">
-					<h2 class="pb-3" id="div_realisation">Projects</h2>
-				
-					<h5 class="d-inline-block mb-1  opacity-60"> UX Design ✏️</h5>
-						<hr class="border border-info border-2 opacity-50">
-					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
+					<h2 class="pb-5" id="div_realisation">Projects</h2>
+					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
 						<div class="col">
-							<div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#Stage3Modal">
-								<img src="Map.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
+							<div class="card shadow-sm">
+								<img src="cardStage3.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
 								<div class="card-body">
 									<h4 class="card-title" py-1 id="titreStage3">Final year internship - UX Design for a visual AI platform</h4>
-									<div class="container-md gap-1 py-2">
+									<div class="container-md gap-1  py-2">
 										<span class="badge text-bg-info rounded-pill">Internship</span>
 										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">UxDesign</span>
 										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Layout</span>
@@ -344,11 +339,16 @@
 										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">VisualIA</span>
 									</div>
 									
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group">
+											<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Stage3Modal" id="voirStage3">Read more</button>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="modal fade" id="Stage3Modal" tabindex="-1" aria-labelledby="Stage3ModalLabel" aria-hidden="true">
-							<div class="modal-dialog modal-xl modal-dialog-scrollable">
+							<div class="modal-dialog modal-lg  modal-dialog-scrollable">
 								<div class="modal-content">
 									<div class="modal-header">
 										<h1 class="modal-title fs-5" id="Stage3ModalLabel">Final year internship - UX Design for a visual AI platform</h1>
@@ -358,26 +358,31 @@
 										<img src="stage3EN.png" class="img-fluid" alt="..." id="presStage3">
 									</div>
 									<div class="modal-footer d-flex justify-content-center gap-2">
-										<a href="https://drive.google.com/file/d/152sd4xpdrLo8d8yE9UX6-a2OQslTzG0Q/view?usp=sharing" target="_blank">
-											<button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn1Stage3">Mockup demo</button>
-										</a>
+										<a href="https://drive.google.com/file/d/152sd4xpdrLo8d8yE9UX6-a2OQslTzG0Q/view?usp=sharing" target="_blank"><button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn1Stage3">Mockup demo</button></a>
 									</div>
 								</div>
 							</div>
 						</div>
-						
 						<div class="col">
-							<div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#PFEModal">
-								<img src="ammenagement.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
+							<div class="card shadow-sm">
+								<img src="cardPFE.jpg" class="img-fluid bd-placeholder-img card-img-top" alt="...">
 								<div class="card-body">
-									<h4 class="card-title"py-1 id="titrePFE">Final year project : site design</h4> <br>
+									<h4 class="card-title"py-1 id="titrePFE">Final year project : site design</h4>
 									<div class="container-md  gap-1  py-2">
 										<span class="badge text-bg-info rounded-pill">Project</span>
-										
-										
+										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">UxDesign</span>
+										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Furnishings</span>
 										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">UserCenteredDesign</span>
 										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">ProjectManagement</span>
-									</div>	
+									</div>
+									<p class="card-text py-2 " id="textePFE">
+										As part of our end-of-study project, we played an active role in the design of a third-party space for an engineering school in the INP group. We were asked to gather user requirements and analyze the existing situation, in order to propose the most functional and appropriate layout possible. The architects took our recommendations into account in their mock-ups. We also provided observation grids to test the layout once it was in place. We also produced information sheets for the various users of the site, as well as observation grids.
+									</p>
+									<div class="d-flex justify-content-between align-items-center py-1">
+										<div class="btn-group">
+											<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#PFEModal" id="voirPFE">Read more</button>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -400,19 +405,29 @@
 							</div>
 						</div>
 						<div class="col">
-							<div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#STAPSModal">
+							<div class="card shadow-sm">
 								<img src="cardStaps.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
 								<div class="card-body">
-									<h4 class="card-title py-1" id="titreSTAPS">Mobile application design </h4> <br>
+									<h4 class="card-title py-1" id="titreSTAPS">Mobile application design </h4>
 									<div class="container-md  gap-1  py-2">
 										<span class="badge text-bg-info rounded-pill">Project</span>
 										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">UxDesign</span>
 										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Layout</span>
 										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Figma</span>
 										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Well-being</span>
-									
+										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Health</span>
 									</div>
-
+									<p class="card-text py-2" id="texteSTAPS">
+										As part of a specialization week, we collaborated with STAPS students to design a health and well-being application. We carried out a survey of existing applications, as well as questionnaires, in order to design a model that would respond to our problem. Our aim was to create a closer link between the patient and the health supervisor via the application, with a view to improving patient follow-up. 
+										<br>
+										<br>
+										<br>
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group py-1">
+											<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#STAPSModal" id="voirSTAPS">Read more</button>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -433,32 +448,173 @@
 								</div>
 							</div>
 						</div>
-						
 						<div class="col">
-							<div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#TRIModal">
-								<img src="cardTriCarte.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
+							<div class="card shadow-sm">
+								<img src="cardTER.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
 								<div class="card-body">
-									<h4 class="card-title py-1" id="titreTRI">Organizing application content</h4> <br>
+									<h4 class="card-title py-1" id="titreTER">Research project - Perception of objects in a 3D environment</h4>
 									<div class="container-md  gap-1  py-2">
 										<span class="badge text-bg-info rounded-pill">Project</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Python</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">UserCenteredDesign</span>
+										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Research</span>
+										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">CognitiveScience</span>
+										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">PerceptionMotricity</span>
+										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">LaTeX</span>
+										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">RStudio</span>
+									</div>
+									<p class="card-text py-2" id="texteTER">
+										I worked for several months alongside a cognitive science researcher on the study of the link between the perception of objects in a 3D environment and motor skills. I had the opportunity to review the literature, organize the experiments, analyze the data and write the report in the form of a scientific article. My research topic was: The effect of image resolution on the perception of objects in a virtual environment. This enabled me to study how humans perceive objects in a virtual environment.
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group py-1">
+											<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#TERModal" id="voirTER">Read more</button>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						
-						
+						<div class="modal fade" id="TERModal" tabindex="-1" aria-labelledby="TERModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-lg  modal-dialog-scrollable">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h1 class="modal-title fs-5" id="TERModalLabel">Perception of objects in a 3D environment</h1>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<img src="TEREN.png" class="img-fluid" alt="..." id="presTER">
+									</div>
+									<div class="modal-footer d-flex justify-content-center gap-2">
+										<a href="https://drive.google.com/file/d/1C6zXEQsYeUnD4hx28ypI33Q-h9xz6Jac/view" target="_blank"><button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn1TER">Report</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
 						<div class="col">
-							<div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#UXCleanerModal">
+							<div class="card shadow-sm">
+								<img src="cardTriCarte.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
+								<div class="card-body">
+									<h4 class="card-title py-1" id="titreTRI">Organizing application content</h4>
+									<div class="container-md  gap-1  py-2">
+										<span class="badge text-bg-info rounded-pill">Project</span>
+										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">UxDesign</span>
+										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">UserCenteredDesign</span>
+									</div>
+									<p class="card-text py-2" id="texteTRI">
+										As part of the creation of an application for our school's board game club, we were asked to think about the organization of information within the menu. We chose the card-sorting method to classify and organize the games in the best possible way for users. 
+										<br>
+										<br>
+										<br>
+										<br>
+										<br>
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group py-1">
+											<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#TRIModal" id="voirTRI">Read more</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-sm">
+								<img src="cardStage2.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
+								<div class="card-body">
+									<h4 class="card-title py-1" id="titreStage2">Second year placement - Research into eating behavior</h4>
+									<div class="container-md  gap-1  py-2">
+										<span class="badge text-bg-info rounded-pill">Internship</span>
+										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Research</span>
+										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">FoodScience</span>
+										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Immersion</span>
+										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Psycho</span>
+										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Python</span>
+										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">RStudio</span>
+									</div>
+									<p class="card-text py-2" id="texteStage2">
+										I was in charge of a research project on eating behavior. It was a call for expressions of interest from the Lille metropolitan area, in collaboration with JUNIA and Anthropo-Lab. JUNIA develops expertise and services around sensory analysis, while Anthropo-Lab is an experimental anthropology laboratory that aims to understand and develop human behavior. My role was to identify physiological markers that reflect appreciation and emotions during an act of consumption. My tasks were to carry out a literature review, set up an experimental protocol in an immersive room, analyze the results and present them.
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group">
+											<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Stage2Modal" id="voirStage2">Read more</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal fade" id="Stage2Modal" tabindex="-1" aria-labelledby="Stage2ModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-lg  modal-dialog-scrollable">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h1 class="modal-title fs-5" id="Stage2ModalLabel">Second year placement - Research into eating behavior</h1>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<img src="stage2EN.png" class="img-fluid" alt="..." id="presStage2">
+									</div>
+									<div class="modal-footer d-flex justify-content-center gap-2">
+										<a href="https://docs.google.com/document/d/1ZViDLfTyY3a9MSZ0Gjz8YBHy8ijyGiYGfdVEjjE9QxQ/edit#heading=h.okyee39b0t99" target="_blank"><button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn1Stage2">Report</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-sm">
+								<img src="caardStage1.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
+								<div class="card-body">
+									<h4 class="card-title py-1" id="titreStage1">First year placement - OpenBCI headset demonstrator</h4>
+									<div class="container-md  gap-1  py-2">
+										<span class="badge text-bg-info rounded-pill">Internship</span>
+										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Research</span>
+										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">CognitiveScience</span>
+										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Python</span>
+										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">EEG</span>
+									</div>
+									<p class="card-text py-2" id="texteStage1">
+										I spent a month working alongside a research engineer in a cognitive science laboratory, Scalab, in Lille. My tasks were to get to grips with an OpenBCI EEG headset, draw up a data sheet and produce a demonstrator. I was able to use my skills in the Python language to develop a demonstrator capable of broadcasting live data from the headset, displaying periodic visual stimuli on the screen, and recording and processing the data in graph form. 
+										<br>
+										<br>
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group py-1">
+											<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Stage1Modal" id="voirStage1">Read more</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal fade" id="Stage1Modal" tabindex="-1" aria-labelledby="Stage1ModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-lg  modal-dialog-scrollable">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h1 class="modal-title fs-5" id="Stage1ModalLabel">OpenBCI headset demonstrator</h1>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<img src="stage1EN.png" class="img-fluid" alt="..." id="presStage1">
+									</div>
+									<div class="modal-footer d-flex justify-content-center gap-2">
+										<a href="https://docs.google.com/document/u/1/d/1Fok7RhiAk4yhXiB-a9YoCXeTK-VQ9idydssgww2hLZg/edit?usp=sharing" target="_blank"><button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn1Stage1">Report</button></a>
+										<a href="https://drive.google.com/drive/u/1/folders/1jE4TlQ1Rp05i5V8IjfysHxpT27hdH5DL" target="_blank"><button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn2Stage1">Demonstrator Code</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-sm">
 								<img src="cardUXCleaner.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
 								<div class="card-body">
 									<h4 class="card-title py-1" id="titreUXCleaner">UX-Cleaner - Web extension design and project management</h4>
 									<div class="container-md  gap-1  py-2">
 										<span class="badge text-bg-info rounded-pill">Project</span>
-										
+										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">UXDesign</span>
 										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">ProjectManagement</span>
 										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">UserCenteredDesign</span>
+									</div>
+									<p class="card-text py-2" id="texteUXCleaner">
+										As part of a school project, we created a web extension to detect dark patterns and dark UX. We set up a score to assess the reliability of a website. We also produced a mock-up and some user observations. My role, along with another student, was to supervise part of the team, applying what I'd learned about project management and knowledge management. I was also part of the UX team, in charge of the extension mock-up, dark pattern detection and user observations.
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group py-1">
+											<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#UXCleanerModal" id="voirUXCleaner">Read more</button>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -481,119 +637,7 @@
 							</div>
 						</div>
 					</div>
-					<br><br>
-				
-					<h5 class="d-inline-block mb-1  opacity-60" id="titre_section2" > Cognitive Science research 🧠</h5>
-						<hr class="border border-info border-2 opacity-50">
-
-						<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-							<div class="col">
-								<div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#TERModal">
-									<img src="cardTER.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
-									<div class="card-body">
-										<h4 class="card-title py-1" id="titreTER">Research project - Perception of objects in a 3D environment</h4>
-										<div class="container-md  gap-1  py-2">
-											<span class="badge text-bg-info rounded-pill">Project</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Research</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">CognitiveScience</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">PerceptionMotricity</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">LaTeX</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">RStudio</span>
-										</div>
-										
-									</div>
-								</div>
-							</div>
-							<div class="modal fade" id="TERModal" tabindex="-1" aria-labelledby="TERModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-lg  modal-dialog-scrollable">
-									<div class="modal-content">
-										<div class="modal-header">
-											<h1 class="modal-title fs-5" id="TERModalLabel">Perception of objects in a 3D environment</h1>
-											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-										</div>
-										<div class="modal-body">
-											<img src="TEREN.png" class="img-fluid" alt="..." id="presTER">
-										</div>
-										<div class="modal-footer d-flex justify-content-center gap-2">
-											<a href="https://drive.google.com/file/d/1C6zXEQsYeUnD4hx28ypI33Q-h9xz6Jac/view" target="_blank"><button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn1TER">Report</button></a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col">
-								<div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#Stage2Modal">
-									<img src="cardStage2.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
-									<div class="card-body">
-										<h4 class="card-title py-1" id="titreStage2">Second year placement - Research into eating behavior</h4> 
-										<div class="container-md  gap-1  py-2">
-											<span class="badge text-bg-info rounded-pill">Internship</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Research</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">FoodScience</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Immersion</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Psycho</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Python</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">RStudio</span>
-										</div>
-										
-									</div>
-								</div>
-							</div>
-							<div class="modal fade" id="Stage2Modal" tabindex="-1" aria-labelledby="Stage2ModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-lg  modal-dialog-scrollable">
-									<div class="modal-content">
-										<div class="modal-header">
-											<h1 class="modal-title fs-5" id="Stage2ModalLabel">Second year placement - Research into eating behavior</h1>
-											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-										</div>
-										<div class="modal-body">
-											<img src="stage2EN.png" class="img-fluid" alt="..." id="presStage2">
-										</div>
-										<div class="modal-footer d-flex justify-content-center gap-2">
-											<a href="https://docs.google.com/document/d/1ZViDLfTyY3a9MSZ0Gjz8YBHy8ijyGiYGfdVEjjE9QxQ/edit#heading=h.okyee39b0t99" target="_blank"><button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn1Stage2">Report</button></a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col">
-								<div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#Stage1Modal" >
-									<img src="caardStage1.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
-									<div class="card-body">
-										<h4 class="card-title py-1" id="titreStage1">First year placement - OpenBCI headset demonstrator</h4>
-										<div class="container-md  gap-1  py-2">
-											<span class="badge text-bg-info rounded-pill">Internship</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Research</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">CognitiveScience</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Python</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">EEG</span>
-										</div>
-										
-									</div>
-								</div>
-							</div>
-							<div class="modal fade" id="Stage1Modal" tabindex="-1" aria-labelledby="Stage1ModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-lg  modal-dialog-scrollable">
-									<div class="modal-content">
-										<div class="modal-header">
-											<h1 class="modal-title fs-5" id="Stage1ModalLabel">OpenBCI headset demonstrator</h1>
-											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-										</div>
-										<div class="modal-body">
-											<img src="stage1EN.png" class="img-fluid" alt="..." id="presStage1">
-										</div>
-										<div class="modal-footer d-flex justify-content-center gap-2">
-											<a href="https://docs.google.com/document/u/1/d/1Fok7RhiAk4yhXiB-a9YoCXeTK-VQ9idydssgww2hLZg/edit?usp=sharing" target="_blank"><button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn1Stage1">Report</button></a>
-											<a href="https://drive.google.com/drive/u/1/folders/1jE4TlQ1Rp05i5V8IjfysHxpT27hdH5DL" target="_blank"><button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn2Stage1">Demonstrator Code</button></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
 				</div>
-				
 			</div>
 			<div>
 				<div class="modal fade" id="TRIModal" tabindex="-1" aria-labelledby="TRIModalLabel" aria-hidden="true">
@@ -610,10 +654,8 @@
 								<a href="https://docs.google.com/presentation/d/1kPaVPY2VHFdejDOfzAkkYYbsYJwrJj_kt1X3JWxw3X4/edit" target="_blank"><button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn1TRI">Presentation</button></a>
 							</div>
 						</div>
-					</div>		
+					</div>
 				</div>
-
-
 				<div class="b-example-divider"></div>
 				<div id="competences"></div>
 				<div class="container px-4 py-5" id="hanging-icons">
@@ -687,7 +729,7 @@
 									<use xlink:href="#bootstrap"/>
 								</svg>
 							</a>
-							<span class="mb-3 mb-md-0 text-body-secondary">&copy; Designed and coded with ❤️ by Zoé Ferfaille - zoe.ferfaille@gmail.com</span>
+							<span class="mb-3 mb-md-0 text-body-secondary">&copy; Coded with ❤️ by Zoé Ferfaille - zoe.ferfaille@gmail.com</span>
 						</div>
 						<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
 							<li class="ms-3">
@@ -711,7 +753,7 @@
     
     const menuItems = document.querySelectorAll('#menu a');
     const menuUX = document.querySelectorAll('#menu_UX li');
-    const menuSoftSkills = document.querySelectorAll('#menuSoftSkills li');
+    const menuSoftSkills = document.querySelectorAll('#menuSoftSkills li')
     const presentationContenu = document.getElementById('presentations');
     const presentationEnsc = document.getElementById('descriptionEnsc');
     const presentationMIASHS = document.getElementById('descriptionMIASHS');
@@ -779,7 +821,6 @@
 	lienAlteia.textContent = "Alteia";
 	lienAlteia.target = "_blank"; // Ajout de l'attribut target="_blank"
   const soustitre = document.getElementById("sous-titre");
-	const titre_section2 = document.getElementById("titre_section2");
 
 
 
@@ -808,21 +849,34 @@
       detailsMIASHS.innerHTML="Voir le détail";
       detailsLAVAL.innerHTML="Voir le détail";
       titreStage2.innerHTML="Stage de deuxième année - Recherche sur le comportement alimentaire";
-
+      texteStage2.innerHTML="J'étais responsable d'un projet de recherche sur le comportement alimentaire. Il s'agissait d'un appel à manifestation d'intérêt de la métropole lilloise, en collaboration avec JUNIA et l’Anthropo-Lab. JUNIA développe une expertise et une offre de services autour de l'analyse sensorielle, tandis que l'Anthropo-Lab est un laboratoire d'anthropologie expérimentale qui vise à comprendre et développer le comportement humain. Mon rôle était d'identifier des marqueurs physiologiques qui reflètent l'appréciation et les émotions lors d'un acte de consommation. Mes tâches consistaient à réaliser une revue de la littérature, à mettre en place un protocole expérimental dans une salle immersive, à analyser les résultats et à les présenter.";
+      voirStage2.innerHTML="En voir plus";
       titreStage3.innerHTML="Stage de fin d'études - UX Design pour une plateforme d’IA visuelle";
+      texteStage3.innerHTML="Réalisant mon stage de 3ème année dans l’entreprise Alteia, j’ai intégré l’équipe UX Design dans le département produit.  Mon rôle est de participer à l’amélioration de fonctionnalités et de modules sur la plateforme Eather d’Alteia. J’ai pu approfondir mes connaissances en UX design et en maquettage. <br> <br> <br>  <br>";
       titreStage1.innerHTML="Démonstrateur du casque OpenBCI";
+      texteStage1.innerHTML="J'ai passé un mois à travailler aux côtés d'un ingénieur de recherche dans un laboratoire de sciences cognitives, Scalab, à Lille. Mes missions étaient de prendre en main un casque EEG OpenBCI, d'établir une fiche technique et de réaliser un démonstrateur. J'ai pu mettre à profit mes compétences en langage Python pour développer un démonstrateur capable de diffuser en direct les données du casque, d'afficher à l'écran des stimulations visuelles périodiques, d'enregistrer et de traiter les données sous forme de graphes <br> <br> <br>";
+      voirStage1.innerHTML="En voir plus";
       titreTER.innerHTML="Travail encadré de recherche - Perception d’objets dans un environnement 3D";
+      texteTER.innerHTML="J'ai travaillé plusieurs mois aux côtés d'un chercheur en sciences cognitives sur l'étude du lien entre la perception d'objets dans un environnement 3D et la motricité. J'ai eu l'occasion de faire une revue de la littérature, d'organiser les expérimentations, d'analyser les données et de rédiger le rapport sous la forme d'un article scientifique. Mon sujet de recherche était le suivant : Effet de la résolution de l'image sur la perception d'objets dans un environnement virtuel. Ainsi, j’ai pu étudier la manière dont l’humain perçoit des objets dans un environnement virtuel.";
       titrePFE.innerHTML="Projet de Fin d'Etudes : aménagement d'un tiers-lieu";
+      textePFE.innerHTML="Dans le cadre de notre projet de fin d’études, nous avons participé activement à l’aménagement d’un tiers lieu pour une école d’ingénieurs du groupe INP. Nous avons été sollicités pour recueillir le besoin des utilisateurs et analyser l’existant afin de proposer un aménagement le plus fonctionnel et adapté possible. Les architectes ont ainsi pris en compte nos recommandations dans leurs maquettes. Nous avons également fourni des grilles d’observations afin de tester cet aménagement une fois qu’il sera effectif. Aussi, nous avons réalisé des fiches informatives à destination des différents utilisateurs du lieu, ainsi que des grilles d’observation. ";
       titreSTAPS.innerHTML="ENSC x STAPS : maquettage d'une application mobile";
+      texteSTAPS.innerHTML="Dans le cadre d’une semaine de spécialisation, nous avons collaboré avec des étudiants de la filière STAPS pour concevoir une application de santé et bien-être. Nous avons réalisé une veille de l’existant ainsi que des questionnaires afin de concevoir une maquette permettant de répondre à notre problématique. Notre objectif était de lier davantage le patient et l’encadrant de santé via l’application, dans le but d'améliorer le suivi du patient. <br> <br><br>";
       titreUXCleaner.innerHTML = "UX-Cleaner - Maquettage d’une extension web et gestion de projet";
-
-
+      texteUXCleaner.innerHTML="Dans le cadre d'un projet scolaire, nous avons créé une extension web pour détecter les dark patterns et les dark UX. Nous avons mis en place un score pour évaluer la fiabilité d'un site web. Nous avons également produit une maquette et quelques observations d'utilisateurs. Mon rôle avec une autre étudiante, était de superviser une partie de l'équipe, en appliquant ce que j'avais appris sur la gestion de projet et la gestion des connaissances. J'ai également fait partie de l'équipe UX, en charge de la maquette de l'extension, de la détection des dark patterns et des observations des utilisateurs.";
+      voirTER.innerHTML="En voir plus";
+      voirPFE.innerHTML="En voir plus";
+      voirSTAPS.innerHTML="En voir plus";
+      voirStage3.innerHTML="En voir plus";
+voirTri.innerHTML = "En voir plus";
+      voirUXCleaner.innerHTML="En voir plus"; 
       colonneUX.innerHTML="Facteurs Humains";
       colonneInfo.innerHTML = "Informatique";
       education.innerHTML = "Études";
       realisations.innerHTML = "Réalisations";
       competences.innerHTML = "Compétences"; 
       titreTRI.innerHTML = "Organisation du contenu d’une application";
+      texteTRI.innerHTML ="Dans le cadre de la création d’une application pour le club de jeux de société de notre école, nous avons été missionnés pour penser l’organisation de l’information au sein du menu. Nous avons choisi la méthode du tri de cartes afin de classifier et d’organiser au mieux les jeux pour les utilisateurs. <br><br><br><br><br><br>";  
       Stage3ModalLabel.innerHTML = "UX Design pour une plateforme d’IA visuelle";
       presStage3.src = "stage3FR.png";
 	btn1Stage3.innerHTML = "Démo maquette";
@@ -864,7 +918,6 @@
       
       lien_cv.href = "https://drive.google.com/file/d/1s-UCSX7P8ll6t-VQW9PQVIjfHXRHUUp9/view?usp=sharing";
 	  soustitre.innerHTML = 'UX Designer dans l\'Intelligence Artificielle Visuelle <span id="cursor">|</span>';
-	  titre_section2.innerHTML ="Recherche en sciences cognitives 🧠";
     
     } else if (lang === 'en') {
       titre_quebec.innerHTML = "jan-may 2023";
@@ -893,15 +946,30 @@
       
 
       titreStage2.innerHTML="Second year placement - Research into eating behavior";
+      texteStage2.innerHTML="I was in charge of a research project on eating behavior. It was a call for expressions of interest from the Lille metropolitan area, in collaboration with JUNIA and Anthropo-Lab. JUNIA develops expertise and services around sensory analysis, while Anthropo-Lab is an experimental anthropology laboratory that aims to understand and develop human behavior. My role was to identify physiological markers that reflect appreciation and emotions during an act of consumption. My tasks were to carry out a literature review, set up an experimental protocol in an immersive room, analyze the results and present them.";
+      voirStage2.innerHTML="Read more";
       titreStage3.innerHTML="Final year internship - UX Design for a visual AI platform";
+      texteStage3.innerHTML="As part of my 3rd year internship at Alteia, I joined the UX Design team in the product department.  My role is to participate in the improvement of functionalities and modules on Alteia's Eather platform. I've been able to deepen my knowledge of UX design and layout. <br> <br> <br>  ";
       titreStage1.innerHTML="First year placement - OpenBCI headset demonstrator";
+      texteStage1.innerHTML="I spent a month working alongside a research engineer in a cognitive science laboratory, Scalab, in Lille. My tasks were to get to grips with an OpenBCI EEG headset, draw up a data sheet and produce a demonstrator. I was able to use my skills in the Python language to develop a demonstrator capable of broadcasting live data from the headset, displaying periodic visual stimuli on the screen, and recording and processing the data in graph form. <br> <br>";
+      voirStage1.innerHTML="Read more";
       titreTER.innerHTML="Research project - Perception of objects in a 3D environment";
+      texteTER.innerHTML="I worked for several months alongside a cognitive science researcher on the study of the link between the perception of objects in a 3D environment and motor skills. I had the opportunity to review the literature, organize the experiments, analyze the data and write the report in the form of a scientific article. My research topic was: The effect of image resolution on the perception of objects in a virtual environment. This enabled me to study how humans perceive objects in a virtual environment. <br> ";
       titrePFE.innerHTML="Final year project : site design";
+      textePFE.innerHTML="As part of our end-of-study project, we played an active role in setting up a third-party space for an engineering school in the INP group. We were asked to gather user requirements and analyze the existing environment, in order to propose a suitable layout. The architects took our recommendations into account in their models. We also produced information sheets for the various users of the site, as well as observation grids. <br> <br>";
       titreSTAPS.innerHTML="ENSC x STAPS : mobile application design";
+      texteSTAPS.innerHTML="As part of our end-of-study project, we played an active role in the design of a third-party space for an engineering school in the INP group. We were asked to gather user requirements and analyze the existing situation, in order to propose the most functional and appropriate layout possible. The architects took our recommendations into account in their mock-ups. We also provided observation grids to test the layout once it was in place. We also produced information sheets for the various users of the site, as well as observation grids.";
       titreUXCleaner.innerHTML = "UX-Cleaner - Web extension design and project management";
-     
+      texteUXCleaner.innerHTML="As part of a school project, we created a web extension to detect dark patterns and dark UX. We set up a score to assess the reliability of a website. We also produced a mock-up and some user observations. My role, along with another student, was to supervise part of the team, applying what I'd learned about project management and knowledge management. I was also part of the UX team, in charge of the extension mock-up, dark pattern detection and user observations.";
+      voirTER.innerHTML="Read more";
+      voirPFE.innerHTML="Read more";
+      voirSTAPS.innerHTML="Read more";
+      voirStage3.innerHTML="Read more";
+      voirUXCleaner.innerHTML="Read more"; 
+	voirTri.innerHTML = "Read more";
       titreTRI.innerHTML = "Organizing application content";
-     
+      texteTRI.innerHTML = "As part of the creation of an application for our school's board game club, we were asked to think about the organization of information within the menu. We chose the card-sorting method to classify and organize the games in the best possible way for users. <br> <br><br> <br>";
+
       Stage3ModalLabel.innerHTML = "Final year internship - UX Design for a visual AI platform";
       presStage3.src = "stage3EN.png";
       btn1Stage3.innerHTML = "Mockup Demo";
@@ -941,7 +1009,6 @@
 
       lien_cv.href = "https://drive.google.com/file/d/13jBdmMUhLHTPg0-8g5QvudiotTO8gL6J/view?usp=sharing";
       soustitre.innerHTML = 'UX Designer in Visual Artificial Intelligence <span id="cursor">|</span>';
-	  titre_section2.innerHTML ="Cognitive science research 🧠";
       
     } 
   }
