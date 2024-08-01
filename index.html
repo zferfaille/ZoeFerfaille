@@ -463,37 +463,7 @@
 						</div>
 						
 						
-						<div class="col">
-							<div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#UXCleanerModal">
-								<img src="cardUXCleaner.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
-								<div class="card-body">
-									<h4 class="card-title py-1" id="titreUXCleaner">UX-Cleaner - Web extension design and project management</h4>
-									<div class="container-md  gap-1  py-2">
-										<span class="badge text-bg-info rounded-pill">Project</span>
-										
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">ProjectManagement</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">UserCenteredDesign</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="modal fade" id="UXCleanerModal" tabindex="-1" aria-labelledby="UXCleanerModalLabel" aria-hidden="true">
-							<div class="modal-dialog modal-lg  modal-dialog-scrollable">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h1 class="modal-title fs-5" id="UXCleanerModalLabel">Web extension design and project management</h1>
-										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-									</div>
-									<div class="modal-body">
-										<img src="UXCleanerEN.png" class="img-fluid" alt="..." id="presUXCleaner">
-									</div>
-									<div class="modal-footer d-flex justify-content-center gap-2">
-										<a href="https://drive.google.com/file/d/1XgYVnuXMI8bGvQpPUKbSXmVnAzncejpi/view" target="_blank"><button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn1UXCleaner">Documentation</button></a>
-										<a href="https://www.figma.com/file/yyG36a0l03TIRzFcMPRsoT/[ENSC-x-STAPS]-Maquette?type=design&mode=design&t=kUDfDYgdxDONMUjD-0" target="_blank"><button class="btn btn-light rounded-pill px-4 btn-md" type="button" id="btn2UXCleaner">Mockup</button></a>
-									</div>
-								</div>
-							</div>
-						</div>
+					
 					</div>
 					<br><br>
 				
@@ -745,9 +715,6 @@
     const titreSTAPS = document.getElementById('titreSTAPS');
     const texteSTAPS = document.getElementById('texteSTAPS');
     const voirSTAPS = document.getElementById('voirSTAPS');
-    const titreUXCleaner = document.getElementById('titreUXCleaner');
-    const texteUXCleaner = document.getElementById('texteUXCleaner');
-    const voirUXCleaner = document.getElementById('voirUXCleaner');
     const colonneUX = document.getElementById('colonneUX');
     const colonneInfo = document.getElementById('colonneInfo');
     const education = document.getElementById('div_education');
@@ -821,9 +788,7 @@
       titreTER.innerHTML="Travail encadré de recherche - Perception d’objets dans un environnement 3D";
       titrePFE.innerHTML="Projet de Fin d'Etudes : aménagement d'un tiers-lieu";
       titreSTAPS.innerHTML="ENSC x STAPS : maquettage d'une application mobile";
-      titreUXCleaner.innerHTML = "UX-Cleaner - Maquettage d’une extension web et gestion de projet </br> </br>";
-
-
+     
       colonneUX.innerHTML="Facteurs Humains";
       colonneInfo.innerHTML = "Informatique";
       education.innerHTML = "Études";
@@ -859,10 +824,7 @@
       btn1STAPS.innerHTML ="Projet";
       btn2STAPS.innerHTML ="Maquettes";
 
-      UXCleanerModalLabel.innerHTML = "Maquettage d’une extension web et gestion de projet";
-      presUXCleaner.src = "UXCleanerFR.png";
-      btn1UXCleaner.innerHTML ="Documentation";
-      btn2UXCleaner.innerHTML ="Maquette";
+     
 
       TRIModalLabel.innerHTML = "Organisation du contenu d’une application";
       presTRI.src = "TRIFR.png";
@@ -941,10 +903,7 @@
       btn1STAPS.innerHTML ="Project";
       btn2STAPS.innerHTML ="Mockups";
       
-      UXCleanerModalLabel.innerHTML = "Web extension design and project management";
-      presUXCleaner.src = "UXCleanerEN.png";
-      btn1UXCleaner.innerHTML ="Documentation";
-      btn2UXCleaner.innerHTML ="Mockup";
+    
 
       TRIModalLabel.innerHTML = "Organizing application content";
       presTRI.src = "TRIFR.png";
