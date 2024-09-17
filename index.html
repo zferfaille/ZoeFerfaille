@@ -39,7 +39,7 @@
 			.card:hover {
 				transform: scale(1.015) translateY(-10px);
 				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-				 border: 1px solid #0dcaf0; 
+				border: 1px solid #0dcaf0; 
 			}
 			
 			.bd-placeholder-img
@@ -148,6 +148,9 @@
             flex-wrap: wrap;
             gap: 10px;
 			}
+
+		
+				
 
 			.skills-badge {
 				font-size: 0.9rem;
@@ -294,11 +297,7 @@
 					</p>
 				</div>
 			</div>
-	
-			
-
 			<div class="b-example-divider"></div>
-
 			<div class="container px-4 py-5" id="featured-3">
 				<h2 class="pb-3" id="div_education">Education</h2>
 				<div class="row g-4 row-cols-1 row-cols-lg-3">
@@ -325,7 +324,6 @@
 					</p>
 					<a href="https://sciences-technologies.univ-lille.fr/mathematiques/formation/licence-mention-miashs" target="_blank" id="detailsMIASHS"  class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
 						View details >>
-					 
 					</a>
 				  </div>
 				  <div class="feature col">
@@ -338,7 +336,6 @@
 					</p>
 					<a href="https://www.ulaval.ca/etudes/programmes/baccalaureat-en-genie-logiciel" target="_blank" id="detailsLAVAL"  class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
 						View details >>
-					 
 					</a>
 				  </div>
 				</div>
@@ -367,7 +364,6 @@
 										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Figma</span>
 										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">VisualIA</span>
 									</div>
-									
 								</div>
 							</div>
 						</div>
@@ -606,13 +602,11 @@
 				
 			</div>
 			<div>
-				
-
-
 				<div class="b-example-divider"></div>
 				<div id="competences"></div>
-				<div class="container px-4 py-5" id="hanging-icons">
+				<div class="container px-4 py-5">
 					<h2 class="pb-2" id="div_competences">Skills</h2>
+					<hr class="border border-info border-2 opacity-50"> <br>
 					<div class="row g-5 py-4 row-cols-1 row-cols-lg-3">
 
 						<div class="col d-flex align-items-start">
@@ -625,7 +619,8 @@
 									<span class="badge skills-badge html">Mockup - Figma</span>
 									<span class="badge skills-badge html">HMI Design</span>
 									<span class="badge skills-badge html">Project Management</span>
-									<span class="badge skills-badge html">HTML</span>
+									<span class="badge skills-badge html">Accessibility</span>
+									<span class="badge skills-badge html">Agile methodology</span>
 								
 								</div>
 							</div>
@@ -651,20 +646,55 @@
 						</div>
 						
 						<div class="col d-flex align-items-start">
+							<div>
+								<h3 class="fs-3" id="colonneTools" >Tools</h3> <br>
+								<div class="skills-badge-container" id="menuSoftSkills">
+									<span class="badge skills-badge html">Figma</span>
+									<span class="badge skills-badge html">GitHub</span>
+									<span class="badge skills-badge html">Jira</span>
+									<span class="badge skills-badge html">RStudio</span>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<br><br><br>
+					
+					<h2 class="pb-2" id="div_competences2">But also...</h2>
+					<hr class="border border-info border-2 opacity-50"> <br>
+					<div class="row g-5 py-4 row-cols-1 row-cols-lg-4">
+						<div class="col d-flex align-items-start">	
+							<div>
+								<h3 class="fs-3" id="softskill1">Always curious</h3> 
+								<p id="softskilldescription1">As the size of my bucket list shows !</p>
+							</div>
+						</div>
+
+						<div class="col d-flex align-items-start">
 							
 							<div>
-								<h3 class="fs-3" >Soft skills</h3> <br>
-								<div class="skills-badge-container" id="menuSoftSkills">
-									<span class="badge skills-badge html">Curiosity</span>
-									<span class="badge skills-badge html">Adaptability</span>
-									<span class="badge skills-badge html">Empathy</span>
-									<span class="badge skills-badge html">Inventiveness</span>
+								<h3 class="fs-3" id="softskill2">Mike Gaver</h3> 
+								<p id="softskilldescription2">If a challenge arises, I already have a solution (or three).</p>
 
 							</div>
 						</div>
 						
-						</div>
-				</div>
+						<div class="col d-flex align-items-start">
+							<div>
+								<h3 class="fs-3" id="softskill3">Sensitive</h3> 
+								<p id="softskilldescription3">Whether in one my violin concert or in interviews, I manage to capture the emotions of my listeners.</p>
+
+							</div>
+						</div>		
+						
+						<div class="col d-flex align-items-start">
+							<div>
+								<h3 class="fs-3" id="softskill4">Disciplined</h3> 
+								<p id="softskilldescription4">At the gym, at the conservatory or with my designs, I like to have a well-established progression plan.</p>
+
+							</div>
+						</div>		
+				
+					</div>
 				</div>
 				<div class="b-example-divider"></div>
 				<div class="container">
@@ -736,26 +766,21 @@
     const Stage3ModalLabel = document.getElementById('Stage3ModalLabel');
     const btn1Stage3 = document.getElementById('btn1Stage3');
     var presStage3 = document.getElementById("presStage3");
-
     const Stage2ModalLabel = document.getElementById('Stage2ModalLabel');
     var presStage2 = document.getElementById("presStage2");
     const btn1Stage2 =  document.getElementById("btn1Stage2");
-    
     const TERModalLabel = document.getElementById('TERModalLabel');
     var presTER = document.getElementById("presTER");
     const btn1TER =  document.getElementById("btn1TER");
-
     const PFEModalLabel = document.getElementById('PFEModalLabel');
     var presPFE = document.getElementById("presPFE");
     const btn1PFE =  document.getElementById("btn1PFE");
     const btn2PFE =  document.getElementById("btn2PFE");
     const btn4PFE =  document.getElementById("btn3PFE");
-
     const STAPSModalLabel = document.getElementById('STAPSModalLabel');
     var presSTAPS = document.getElementById("presSTAPS");
     const btn1STAPS =  document.getElementById("btn1STAPS");
     const btn2STAPS =  document.getElementById("btn2STAPS");
-
     const TRIModalLabel = document.getElementById('TRIModalLabel');
     var presTRI = document.getElementById("presTRI");
     const btn1TRI =  document.getElementById("btn1TRI");
@@ -763,11 +788,17 @@
 	lienAlteia.href = "https://alteia.com/";
 	lienAlteia.textContent = "Alteia";
 	lienAlteia.target = "_blank"; // Ajout de l'attribut target="_blank"
-  const soustitre = document.getElementById("sous-titre");
+  	const soustitre = document.getElementById("sous-titre");
 	const titre_section2 = document.getElementById("titre_section2");
-
-
-
+	const colonneTools = document.getElementById("colonneTools");
+	const softskill1 = document.getElementById("softskill1");
+	const softskill3 = document.getElementById("softskill3");
+	const softskill4 = document.getElementById("softskill4");
+	const div_competences2 = document.getElementById("div_competences2");
+	const softskilldescription1 = document.getElementById("softskilldescription1");
+	const softskilldescription2 = document.getElementById("softskilldescription2");
+	const softskilldescription3 = document.getElementById("softskilldescription3");
+	const softskilldescription4 = document.getElementById("softskilldescription4");
 
     if (lang === 'fr') {
       titre_quebec.innerHTML = "janv-mai 2023";
@@ -780,10 +811,8 @@
       menuUX[3].innerHTML = "Conception d'IHM";
       menuUX[4].innerHTML = "Gestion de Projet";
       menuUX[5].innerHTML = "Accessibilité";
-      menuSoftSkills[0].innerHTML = "Curiosité";
-      menuSoftSkills[1].innerHTML = "Adaptabilité";
-      menuSoftSkills[2].innerHTML = "Empathie";
-      menuSoftSkills[3].innerHTML = "Inventivité";
+	  menuUX[6].innerHTML = "Méthode agile";
+
       bouton_cv.innerHTML = 'Voir mon CV';
       presentationContenu.innerHTML ="J'ai toujours aimé étudier le comportement humain et les sciences cognitives. Également intéréssée par les technologies et l'informatique, j'aime réflèchir aux intéractions entre hommes et machines afin de les parfaire. C'est donc tout naturellement que je me suis tournée vers l'UX Design pendant mes études. </br> </br> Actuellement en train de finir ma dernière année d'école d'ingénieur en Cognitique, j'effectue mon stage de fin d'études à "+ lienAlteia.outerHTML + " , une entreprise spécialisée dans l'Intelligence Artificielle visuelle. Cette expérience me conforte dans mon envie de poursuivre dans l'UX Design et la conception centrée utilisateurs après l'école. </br> </br>  Je recherche donc une opportunité pour un emploi en tant qu' UX Designeur dans le domaine de l'IA ou de la santé de préfèrence, dès le mois de Septembre.";
       presentationEnsc.innerHTML ="Diplôme d'ingénieur à l'Ecole Nationale Supérieure de Cognitique (ENSC) de Bordeaux  ";
@@ -808,7 +837,7 @@
       titreTRI.innerHTML = "Organisation du contenu d’une application";
       Stage3ModalLabel.innerHTML = "UX Design pour une plateforme d’IA visuelle";
       presStage3.src = "stage3FR.png";
-	btn1Stage3.innerHTML = "Démo maquette";
+	  btn1Stage3.innerHTML = "Démo maquette";
 
       Stage2ModalLabel.innerHTML = "Recherche sur le comportement alimentaire";
       presStage2.src = "stage2FR.png";
@@ -835,17 +864,25 @@
       btn1STAPS.innerHTML ="Projet";
       btn2STAPS.innerHTML ="Maquettes";
 
-     
+	  div_competences2.innerHTML = "Mais aussi ...";
+	  softskill1.innerHTML = "Toujours curieuse";
+	  softskill3.innerHTML = "Sensible";
+	  softskill4.innerHTML = "Disciplinée";
 
-      TRIModalLabel.innerHTML = "Organisation du contenu d’une application";
+	  softskilldescription1.innerHTML = "Comme le prouve la taille de ma bucket list !";
+	  softskilldescription2.innerHTML = "Si un challenge arrive, j'ai déjà une solution (ou trois).";
+	  softskilldescription3.innerHTML = "Que ce soit pendant un concert de violon ou lors d'entretiens, je parviens à capter les émotions de mes auditeurs.";
+	  softskilldescription4.innerHTML = "À la salle de sport, au conservatoire ou avec mes designs, j'aime avoir un plan de progression bien établi.";      TRIModalLabel.innerHTML = "Organisation du contenu d’une application";
       presTRI.src = "TRIFR.png";
       btn1STAPS.innerHTML ="Présentation";
 
       
       lien_cv.href = "https://drive.google.com/file/d/1s-UCSX7P8ll6t-VQW9PQVIjfHXRHUUp9/view?usp=sharing";
-	  soustitre.innerHTML = 'UX Designer dans l\'Intelligence Artificielle Visuelle <span id="cursor">|</span>';
 	  titre_section2.innerHTML ="Recherche en sciences cognitives";
+	  colonneTools.innerHTML = "Outils";
     
+	  soustitre.innerHTML = 'UX Designer dans l\'Intelligence Artificielle Visuelle <span id="cursor">|</span>';
+	  
     } else if (lang === 'en') {
       titre_quebec.innerHTML = "jan-may 2023";
       menuItems[0].innerHTML = 'About';
@@ -864,10 +901,8 @@
       menuUX[3].innerHTML = "HMI Design";
       menuUX[4].innerHTML = "Project Management";
       menuUX[5].innerHTML = "Accessibility";
-      menuSoftSkills[0].innerHTML = "Curiosity";
-      menuSoftSkills[1].innerHTML = "Adaptability";
-      menuSoftSkills[2].innerHTML = "Empathy";
-      menuSoftSkills[3].innerHTML = "Inventiveness";
+	  menuUX[6].innerHTML = "Agile methodology";
+      
       presentationEnsc.innerHTML ="Engineering degree at l'Ecole Nationale Supérieure de Cognitique de Bordeaux (ENSC) - Cognitics";
       presentationMIASHS.innerHTML="Bachelor's degree in mathematics and computer science applied to cognitive sciences in Lille University";
       descriptionLaval.innerHTML="Exchange program in the Software Engineering Department at Université Laval in Quebec City";
@@ -913,16 +948,26 @@
       btn1STAPS.innerHTML ="Project";
       btn2STAPS.innerHTML ="Mockups";
       
-    
+	  div_competences2.innerHTML = "But aslo ...";
+	  softskill1.innerHTML = "Always curious";
+	  softskill3.innerHTML = "Sensitive";
+	  softskill4.innerHTML = "Disciplined";
+	  softskilldescription1.innerHTML = "As the size of my bucket list shows !";
+	  softskilldescription2.innerHTML = "If a challenge arises, I already have a solution (or three).";
+	  softskilldescription3.innerHTML = "Whether in one my violin concert or in interviews, I manage to capture the emotions of my listeners.";
+	  softskilldescription4.innerHTML = "At the gym, at the conservatory or with my designs, I like to have a well-established progression plan.";
+
 
       TRIModalLabel.innerHTML = "Organizing application content";
       presTRI.src = "TRIEN.png";
       btn1STAPS.innerHTML ="Presentation";
 
       lien_cv.href = "https://drive.google.com/file/d/13jBdmMUhLHTPg0-8g5QvudiotTO8gL6J/view?usp=sharing";
-      soustitre.innerHTML = 'UX Designer in Visual Artificial Intelligence <span id="cursor">|</span>';
-	  titre_section2.innerHTML ="Cognitive science research 🧠";
+	  titre_section2.innerHTML ="Cognitive science research";
       
+	  colonneTools.innerHTML = "Tools";
+      soustitre.innerHTML = 'UX Designer in Visual Artificial Intelligence <span id="cursor">|</span>';
+	  
     } 
   }
 
