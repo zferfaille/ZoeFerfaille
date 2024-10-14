@@ -23,6 +23,133 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 		<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 		<style>
+
+	
+			@import "functions";
+			@import "variables";
+			@import "variables-dark";
+
+			.primary-color {
+				color: #014747; 
+							}
+			.primary-color:hover {
+				color: #015a5a; 
+			}
+
+
+			.custom-hr {
+				border: none; /* Supprime la bordure par défaut */
+				border-top: 10px solid #014747; /* Définit la bordure supérieure avec la couleur primaire */
+				
+			}
+			.custom-hr2 {
+				border: none; /* Supprime la bordure par défaut */
+				border-top: 10px solid #3700B3; /* Définit la bordure supérieure avec la couleur primaire */
+				
+			}
+			.custom-hr3 {
+				border: none; /* Supprime la bordure par défaut */
+				border-top: 10px solid #FF7597; /* Définit la bordure supérieure avec la couleur primaire */
+				
+			}
+			.custom-badge1 {
+				background-color: #E0F7F4; /* Couleur de fond */
+				color: #00695C; /* Couleur du texte */
+				border: 1px solid #00BFA6; /* Contour */
+			}
+
+			.custom-badge12 {
+				background-color: #E0F2F2; /* Couleur de fond */
+				color: #004242; /* Couleur du texte */
+				border: 1px solid #015B5B; /* Contour */
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+			}
+
+			.custom-badge2 {
+				background-color: #F3E8FF; /* Couleur de fond */
+				color: #5F009C; /* Couleur du texte */
+				border: 1px solid  #A75AFD; /* Contour */
+			}
+
+			.custom-badge22 {
+				background-color: #EDE7FF; /* Couleur de fond */
+				color: #31009B; /* Couleur du texte */
+				border: 1px solid #5300D6; /* Contour */
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+			}
+
+			[data-bs-theme="dark"] {
+				.custom-hr {
+				border: none; /* Supprime la bordure par défaut */
+				border-top: 10px solid #03DAC6; /* Définit la bordure supérieure avec la couleur primaire */
+				
+			}
+			.custom-hr2 {
+				border: none; /* Supprime la bordure par défaut */
+				border-top: 10px solid #BB86FC; /* Définit la bordure supérieure avec la couleur primaire */
+				
+			}
+			.purplecard {
+				transition: transform 0.2s, box-shadow 0.3s;
+			}
+			
+
+			.purplecard:hover {
+				transform: scale(1.015) translateY(-10px);
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+				border: 1px solid #BB86FC; 
+			}
+
+			
+				.primary-color:hover{
+					color : #01ecd5;
+				}
+				.primary-color {
+					color : #03DAC6;
+					border : #03DAC6;
+				}
+				.custom-badge1 {
+					background-color: #00332C; /* Couleur de fond pour dark mode */
+					color:  #03DAC6; /* Couleur du texte pour dark mode */
+					border: 1px solid  #03DAC6; /* Contour pour dark mode */
+				}
+				.custom-badge12 {
+					background-color: #03DAC6; /* Couleur de fond pour dark mode */
+					color:  #002626; /* Couleur du texte pour dark mode */
+					border: 1px solid  #66CCCC; /* Contour pour dark mode */
+				}
+				.custom-badge2 {
+				background-color: #2C004A; /* Couleur de fond */
+				color: #E4B3FF; /* Couleur du texte */
+				border: 1px solid  #BB86FC; /* Contour */
+				}
+
+				.custom-badge22 {
+					background-color: #E4B3FF ; /* Couleur de fond */
+					color: #2C004A; /* Couleur du texte */
+					border: 1px solid #E4B3FF; /* Contour */
+					box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+				}
+
+				.btn-bd-primary
+					{
+						--bd-violet-bg: #bb86fc;
+						--bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+						--bs-btn-font-weight: 600;
+						--bs-btn-color: var(--bs-dark);
+						--bs-btn-bg: var(--bd-violet-bg);
+						--bs-btn-border-color: var(--bd-violet-bg);
+						--bs-btn-hover-color: var(--bs-dark);
+						--bs-btn-hover-bg: #a668f2;
+						--bs-btn-hover-border-color: #a668f2;
+						--bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+						--bs-btn-active-color: var(--bs-btn-hover-color);
+						--bs-btn-active-bg: #c4a1f0;
+						--bs-btn-active-border-color: #c4a1f0;
+					}
+				
+			}
+
 			.card-img-top {
 				max-height: 400px; /* Remplace 200px par la hauteur maximale souhaitée */
 				max-width: 300px;
@@ -32,15 +159,29 @@
 				margin-top: auto;
 			}
 
-			.card {
+			.bluecard {
 				transition: transform 0.2s, box-shadow 0.3s;
 			}
+			
 
-			.card:hover {
+			.bluecard:hover {
 				transform: scale(1.015) translateY(-10px);
 				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-				border: 1px solid #0dcaf0; 
+				border: 1px solid #03DAC6; 
 			}
+
+			.purplecard {
+				transition: transform 0.2s, box-shadow 0.3s;
+			}
+			
+
+			.purplecard:hover {
+				transform: scale(1.015) translateY(-10px);
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+				border: 1px solid #3700B3; 
+			}
+
+			
 			
 			.bd-placeholder-img
 			{
@@ -104,19 +245,19 @@
 
 			.btn-bd-primary
 			{
-				--bd-violet-bg: #0dcaf0;
+				--bd-violet-bg: #6200ee;
 				--bd-violet-rgb: 112.520718, 44.062154, 249.437846;
 				--bs-btn-font-weight: 600;
-				--bs-btn-color: var(--bs-black);
+				--bs-btn-color: var(--bs-white);
 				--bs-btn-bg: var(--bd-violet-bg);
 				--bs-btn-border-color: var(--bd-violet-bg);
-				--bs-btn-hover-color: var(--bs-black);
-				--bs-btn-hover-bg: #10afcf;
-				--bs-btn-hover-border-color: #10afcf;
+				--bs-btn-hover-color: var(--bs-white);
+				--bs-btn-hover-bg: #720dfe;
+				--bs-btn-hover-border-color: #720dfe;
 				--bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
 				--bs-btn-active-color: var(--bs-btn-hover-color);
-				--bs-btn-active-bg: #138fa7;
-				--bs-btn-active-border-color: #138fa7;
+				--bs-btn-active-bg: #4b03b0;
+				--bs-btn-active-border-color: #4b03b0;
 			}
 
 			.bd-mode-toggle
@@ -151,10 +292,12 @@
 			.skills-badge {
 				font-size: 0.9rem;
 				padding: 0.5rem 1rem;
-				color: #0087a2; /* Default text color for all badges */
-				background-color: #eaf4f4;
+				color: #850035; /* Default text color for all badges */
+				background-color: #fef8fa;
 				
 			}
+			
+
 			
 		</style>
 		<style>
@@ -284,7 +427,7 @@
 						</br>
 						</br>
 						 I'm currently finishing my final year of engineering school in Cognitics, and doing my end-of-studies internship at 
-						<a href="https://alteia.com/" target="_blank"  class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Alteia</a>, a company specializing in visual Artificial Intelligence. This experience confirmed my desire to pursue UX Design and user-centered design after school.  
+						<a href="https://alteia.com/" target="_blank"  class="primary-color">Alteia</a>, a company specializing in visual Artificial Intelligence. This experience confirmed my desire to pursue UX Design and user-centered design after school.  
 						</br>
 						</br>
 						 I'm therefore looking for a job opportunity as a UX Designer, preferably in the AI or healthcare field, starting in September.
@@ -303,7 +446,7 @@
 					<p id="descriptionEnsc">
 						Engineering degree at l'Ecole Nationale Supérieure de Cognitique of Bordeaux (ENSC) - Cognitics
 					</p>
-					<a href="https://ensc.bordeaux-inp.fr/fr" target="_blank"  class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" id="detailsENSC">
+					<a href="https://ensc.bordeaux-inp.fr/fr" target="_blank"  class="primary-color" id="detailsENSC">
 					  View details >>
 					  
 					</a>
@@ -316,7 +459,7 @@
 					<p id="descriptionMIASHS">
 						Bachelor's degree in mathematics and computer science applied to cognitive sciences in Lille University
 					</p>
-					<a href="https://sciences-technologies.univ-lille.fr/mathematiques/formation/licence-mention-miashs" target="_blank" id="detailsMIASHS"  class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+					<a href="https://sciences-technologies.univ-lille.fr/mathematiques/formation/licence-mention-miashs" target="_blank" id="detailsMIASHS"  class="primary-color">
 						View details >>
 					</a>
 				  </div>
@@ -328,7 +471,7 @@
 					<p id="descriptionLaval">
 						Exchange program in the Software Engineering Department at Université Laval in Quebec City
 					</p>
-					<a href="https://www.ulaval.ca/etudes/programmes/baccalaureat-en-genie-logiciel" target="_blank" id="detailsLAVAL"  class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+					<a href="https://www.ulaval.ca/etudes/programmes/baccalaureat-en-genie-logiciel" target="_blank" id="detailsLAVAL"  class="primary-color">
 						View details >>
 					</a>
 				  </div>
@@ -342,21 +485,21 @@
 				<div class="container">
 					<h2 class="pb-3" id="div_realisation">Projects</h2>
 				
-					<h5 class="d-inline-block mb-1 pt-3 opacity-60"> UX Design </h5>
-						<hr class="border border-info border-2 opacity-50"> <br>
+					<h5 class="d-inline-block mb-1 pt-3"> UX Design </h5>
+					<hr  class="custom-hr2"> <br>
 					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
 						<div class="col">
-							<div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#Stage3Modal">
+							<div class="card shadow-sm purplecard" data-bs-toggle="modal" data-bs-target="#Stage3Modal">
 								<img src="Map.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
 								<div class="card-body">
 									<h4 class="card-title" py-1 id="titreStage3">How to simplify navigation within a visual AI tool with UX ? </br> </br></h4>
 									<div class="container-md gap-1 py-2">
-										<span class="badge text-bg-info rounded-pill">Internship</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">UxDesign</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Layout</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Figma</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">VisualIA</span>
+										<span class="badge rounded-pill custom-badge22">Internship</span>
+										<span class="badge rounded-pill custom-badge2">UxDesign</span>
+										<span class="badge rounded-pill custom-badge2">Layout</span>
+										<span class="badge rounded-pill custom-badge2">Figma</span>
+										<span class="badge rounded-pill custom-badge2">VisualIA</span>
 									</div>
 								</div>
 							</div>
@@ -381,16 +524,16 @@
 						</div>
 						
 						<div class="col">
-							<div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#PFEModal">
+							<div class="card shadow-sm purplecard" data-bs-toggle="modal" data-bs-target="#PFEModal">
 								<img src="ammenagement.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
 								<div class="card-body">
 									<h4 class="card-title"py-1 id="titrePFE">How do you adopt a UX approach to the design of a third-location facility ?</h4> 
 									<div class="container-md  gap-1  py-2">
-										<span class="badge text-bg-info rounded-pill">Project</span>
+										<span class="badge rounded-pill custom-badge22">Project</span>
 										
 										
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">UserCenteredDesign</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">ProjectManagement</span>
+										<span class="badge rounded-pill custom-badge2">UserCenteredDesign</span>
+										<span class="badge rounded-pill custom-badge2">ProjectManagement</span>
 									</div>	
 								</div>
 							</div>
@@ -414,16 +557,16 @@
 							</div>
 						</div>
 						<div class="col">
-							<div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#STAPSModal">
+							<div class="card shadow-sm purplecard" data-bs-toggle="modal" data-bs-target="#STAPSModal">
 								<img src="cardStaps.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
 								<div class="card-body">
 									<h4 class="card-title" py-1 id="titreSTAPS">From user research to the design of a better health app </h4> <br>
 									<div class="container-md  gap-1  py-2">
-										<span class="badge text-bg-info rounded-pill">Project</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">UxDesign</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Layout</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Figma</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Well-being</span>
+										<span class="badge rounded-pill custom-badge22">Project</span>
+										<span class="badge rounded-pill custom-badge2">UxDesign</span>
+										<span class="badge rounded-pill custom-badge2">Layout</span>
+										<span class="badge rounded-pill custom-badge2">Figma</span>
+										<span class="badge rounded-pill custom-badge2">Well-being</span>
 									
 									</div>
 
@@ -449,14 +592,14 @@
 						</div>
 						
 						<div class="col">
-							<div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#TRIModal">
+							<div class="card shadow-sm purplecard" data-bs-toggle="modal" data-bs-target="#TRIModal">
 								<img src="cardTriCarte.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
 								<div class="card-body">
 									<h4 class="card-title py-1" id="titreTRI">Optimized game search thanks to intuitive organization</h4> <br>
 									<div class="container-md  gap-1  py-2">
-										<span class="badge text-bg-info rounded-pill">Project</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Python</span>
-										<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">UserCenteredDesign</span>
+										<span class="badge rounded-pill custom-badge22">Project</span>
+										<span class="badge rounded-pill custom-badge2">Python</span>
+										<span class="badge rounded-pill custom-badge2">UserCenteredDesign</span>
 									</div>
 								</div>
 							</div>
@@ -483,23 +626,23 @@
 					</div>
 					<br><br>
 				
-					<h5 class="d-inline-block mb-1  opacity-60" id="titre_section2" > Cognitive Science research </h5>
-						<hr class="border border-info border-2 opacity-50"> <br>
+					<h5 class="d-inline-block mb-1" id="titre_section2" > Cognitive Science research </h5>
+						<hr  class="custom-hr"> <br>
 
 						<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
 							<div class="col">
-								<div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#TERModal">
+								<div class="card shadow-sm bluecard" data-bs-toggle="modal" data-bs-target="#TERModal">
 									<img src="cardTER.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
 									<div class="card-body">
 										<h4 class="card-title py-1" id="titreTER">What impact does image quality have on perception in a 3D environment ?</h4>
 										<div class="container-md  gap-1  py-2">
-											<span class="badge text-bg-info rounded-pill">Project</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Research</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">CognitiveScience</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">PerceptionMotricity</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">LaTeX</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">RStudio</span>
+											<span class="badge rounded-pill custom-badge12">Project</span>
+											<span class="badge rounded-pill custom-badge1">Research</span>
+											<span class="badge rounded-pill custom-badge1">CognitiveScience</span>
+											<span class="badge rounded-pill custom-badge1">PerceptionMotricity</span>
+											<span class="badge rounded-pill custom-badge1">LaTeX</span>
+											<span class="badge rounded-pill custom-badge1">RStudio</span>
 										</div>
 										
 									</div>
@@ -523,18 +666,18 @@
 							</div>
 
 							<div class="col">
-								<div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#Stage2Modal">
+								<div class="card shadow-sm bluecard" data-bs-toggle="modal" data-bs-target="#Stage2Modal">
 									<img src="cardStage2.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
 									<div class="card-body">
 										<h4 class="card-title py-1" id="titreStage2">What happens physiologically when we enjoy food ? <br> <br></h4> 
 										<div class="container-md  gap-1  py-2">
-											<span class="badge text-bg-info rounded-pill">Internship</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Research</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">FoodScience</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Immersion</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Psycho</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Python</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">RStudio</span>
+											<span class="badge rounded-pill custom-badge12">Internship</span>
+											<span class="badge rounded-pill custom-badge1">Research</span>
+											<span class="badge rounded-pill custom-badge1">FoodScience</span>
+											<span class="badge rounded-pill custom-badge1">Immersion</span>
+											<span class="badge rounded-pill custom-badge1">Psycho</span>
+											<span class="badge rounded-pill custom-badge1">Python</span>
+											<span class="badge rounded-pill custom-badge1">RStudio</span>
 										</div>
 										
 									</div>
@@ -558,16 +701,16 @@
 							</div>
 
 							<div class="col">
-								<div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#Stage1Modal" >
+								<div class="card shadow-sm bluecard" data-bs-toggle="modal" data-bs-target="#Stage1Modal" >
 									<img src="caardStage1.png" class="img-fluid bd-placeholder-img card-img-top" alt="...">
 									<div class="card-body">
 										<h4 class="card-title py-1" id="titreStage1">OpenBCI headset demonstrator <br> <br><br></h4>
 										<div class="container-md  gap-1  py-2">
-											<span class="badge text-bg-info rounded-pill">Internship</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Research</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">CognitiveScience</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Python</span>
-											<span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">EEG</span>
+											<span class="badge rounded-pill custom-badge12">Internship</span>
+											<span class="badge rounded-pill custom-badge1">Research</span>
+											<span class="badge rounded-pill custom-badge1">CognitiveScience</span>
+											<span class="badge rounded-pill custom-badge1">Python</span>
+											<span class="badge rounded-pill custom-badge1">EEG</span>
 										</div>
 										
 									</div>
@@ -600,7 +743,7 @@
 				<div id="competences"></div>
 				<div class="container px-4 py-5">
 					<h2 class="pb-2" id="div_competences">Skills</h2>
-					<hr class="border border-info border-2 opacity-50"> <br>
+					<hr  class="custom-hr3"> <br> <br>
 					<div class="row g-5 py-4 row-cols-1 row-cols-lg-3">
 
 						<div class="col d-flex align-items-start">
@@ -654,7 +797,7 @@
 					<br><br><br>
 					
 					<h2 class="pb-2" id="div_competences2">But also...</h2>
-					<hr class="border border-info border-2 opacity-50"> <br>
+					<hr  class="custom-hr3"> <br> <br>
 					<div class="row g-5 py-4 row-cols-1 row-cols-lg-4">
 						<div class="col d-flex align-items-start">	
 							<div>
@@ -675,7 +818,7 @@
 						<div class="col d-flex align-items-start">
 							<div>
 								<h3 class="fs-3" id="softskill3">Sensitive</h3> 
-								<p id="softskilldescription3">Whether in one my violin concert or in interviews, I manage to capture the emotions of my listeners.</p>
+								<p id="softskilldescription3">Whether in one of my violin concert or in interviews, I manage to capture the emotions of my listeners.</p>
 
 							</div>
 						</div>		
@@ -951,7 +1094,7 @@
 	  softskill4.innerHTML = "Disciplined";
 	  softskilldescription1.innerHTML = "As the size of my bucket list shows !<br>Tell me what interests you and I'll be interested.";
 	  softskilldescription2.innerHTML = "Like MacGyver, when a challenge comes up, I already have a solution (or three). My creativity has no limits.";
-	  softskilldescription3.innerHTML = "Whether in one my violin concert or in interviews, I manage to capture the emotions of my listeners.";
+	  softskilldescription3.innerHTML = "Whether in one of my violin concert or in interviews, I manage to capture the emotions of my listeners.";
 	  softskilldescription4.innerHTML = "At the gym, at the conservatory or with my designs, I like to have a well-established progression plan.";
 
 
