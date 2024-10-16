@@ -39,29 +39,29 @@
 
 			.custom-hr {
 				border: none; /* Supprime la bordure par défaut */
-				border-top: 10px solid #014747; /* Définit la bordure supérieure avec la couleur primaire */
+				border-top: 2px solid #014747; /* Définit la bordure supérieure avec la couleur primaire */
 				
 			}
 			.custom-hr2 {
 				border: none; /* Supprime la bordure par défaut */
-				border-top: 10px solid #3700B3; /* Définit la bordure supérieure avec la couleur primaire */
+				border-top: 2px solid #3700B3; /* Définit la bordure supérieure avec la couleur primaire */
 				
 			}
 			.custom-hr3 {
 				border: none; /* Supprime la bordure par défaut */
-				border-top: 10px solid #FF7597; /* Définit la bordure supérieure avec la couleur primaire */
+				border-top: 2px solid #FF7597; /* Définit la bordure supérieure avec la couleur primaire */
 				
 			}
 			.custom-badge1 {
-				background-color: #E0F7F4; /* Couleur de fond */
-				color: #00695C; /* Couleur du texte */
-				border: 1px solid #00BFA6; /* Contour */
+				background-color: #cff4fc; /* Couleur de fond */
+				color: #125b6a; /* Couleur du texte */
+				border: 1px solid #abecf9; /* Contour */
 			}
 
 			.custom-badge12 {
-				background-color: #E0F2F2; /* Couleur de fond */
-				color: #004242; /* Couleur du texte */
-				border: 1px solid #015B5B; /* Contour */
+				background-color: #125b6a; /* Couleur de fond */
+				color: #cff4fc; /* Couleur du texte */
+				border: 1px solid #125b6a; /* Contour */
 				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 			}
 
@@ -72,21 +72,21 @@
 			}
 
 			.custom-badge22 {
-				background-color: #EDE7FF; /* Couleur de fond */
-				color: #31009B; /* Couleur du texte */
-				border: 1px solid #5300D6; /* Contour */
+				background-color: #5F009C; /* Couleur de fond */
+				color:#F3E8FF; /* Couleur du texte */
+				border: 1px solid #A75AFD; /* Contour */
 				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 			}
 
 			[data-bs-theme="dark"] {
 				.custom-hr {
 				border: none; /* Supprime la bordure par défaut */
-				border-top: 10px solid #03DAC6; /* Définit la bordure supérieure avec la couleur primaire */
+				border-top: 2px solid #03DAC6; /* Définit la bordure supérieure avec la couleur primaire */
 				
 			}
 			.custom-hr2 {
 				border: none; /* Supprime la bordure par défaut */
-				border-top: 10px solid #BB86FC; /* Définit la bordure supérieure avec la couleur primaire */
+				border-top: 2px solid #BB86FC; /* Définit la bordure supérieure avec la couleur primaire */
 				
 			}
 			.purplecard {
@@ -109,14 +109,14 @@
 					border : #03DAC6;
 				}
 				.custom-badge1 {
-					background-color: #00332C; /* Couleur de fond pour dark mode */
-					color:  #03DAC6; /* Couleur du texte pour dark mode */
-					border: 1px solid  #03DAC6; /* Contour pour dark mode */
+					background-color: #032830; /* Couleur de fond pour dark mode */
+					color:  #6edff6; /* Couleur du texte pour dark mode */
+					border: 1px solid  #076578; /* Contour pour dark mode */
 				}
 				.custom-badge12 {
-					background-color: #03DAC6; /* Couleur de fond pour dark mode */
-					color:  #002626; /* Couleur du texte pour dark mode */
-					border: 1px solid  #66CCCC; /* Contour pour dark mode */
+					background-color: #6edff6; /* Couleur de fond pour dark mode */
+					color:  #032830; /* Couleur du texte pour dark mode */
+					border: 1px solid  #076578; /* Contour pour dark mode */
 				}
 				.custom-badge2 {
 				background-color: #2C004A; /* Couleur de fond */
@@ -148,6 +148,13 @@
 						--bs-btn-active-border-color: #c4a1f0;
 					}
 				
+					.skills-badge {
+						font-size: 0.9rem;
+						padding: 0.5rem 1rem;
+						color: #014747; /* Default text color for all badges */
+						background-color: #f5ffff;
+						
+					}
 			}
 
 			.card-img-top {
@@ -167,7 +174,7 @@
 			.bluecard:hover {
 				transform: scale(1.015) translateY(-10px);
 				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-				border: 1px solid #03DAC6; 
+				border: 1px solid #6edff6; 
 			}
 
 			.purplecard {
@@ -289,14 +296,14 @@
             gap: 10px;
 			}
 
+		
 			.skills-badge {
-				font-size: 0.9rem;
-				padding: 0.5rem 1rem;
-				color: #850035; /* Default text color for all badges */
-				background-color: #fef8fa;
-				
-			}
-			
+						font-size: 0.9rem;
+						padding: 0.5rem 1rem;
+						color: #f5ffff; /* Default text color for all badges */
+						background-color: #014747;
+						
+					}
 
 			
 		</style>
@@ -627,7 +634,7 @@
 					<br><br>
 				
 					<h5 class="d-inline-block mb-1" id="titre_section2" > Cognitive Science research </h5>
-						<hr  class="custom-hr"> <br>
+					<hr class="border border-info border-10 opacity-50"> <br>
 
 						<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
@@ -743,7 +750,7 @@
 				<div id="competences"></div>
 				<div class="container px-4 py-5">
 					<h2 class="pb-2" id="div_competences">Skills</h2>
-					<hr  class="custom-hr3"> <br> <br>
+					<hr  class="custom-hr"> <br> <br>
 					<div class="row g-5 py-4 row-cols-1 row-cols-lg-3">
 
 						<div class="col d-flex align-items-start">
@@ -797,7 +804,7 @@
 					<br><br><br>
 					
 					<h2 class="pb-2" id="div_competences2">But also...</h2>
-					<hr  class="custom-hr3"> <br> <br>
+					<hr  class="custom-hr"> <br> <br>
 					<div class="row g-5 py-4 row-cols-1 row-cols-lg-4">
 						<div class="col d-flex align-items-start">	
 							<div>
