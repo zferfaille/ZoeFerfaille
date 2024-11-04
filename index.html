@@ -388,7 +388,7 @@
 					<span class="visually-hidden" id="bd-theme-text">Toggle language</span>
 				</button>
 				<ul class="dropdown-menu dropdown-menu-end shadow" >
-					<li><button type="button" class="dropdown-item d-flex align-items-center" onclick="changeLanguage('fr')">French</button></li>
+					<li><button type="button" class="dropdown-item d-flex align-items-center" onclick="changeLanguage('fr')">Français</button></li>
 					<li><button type="button" class="dropdown-item d-flex align-items-center" onclick="changeLanguage('en')">English</button></li>
 					<li></li>
 				</ul>
@@ -430,14 +430,15 @@
 					<h3 id="soustitre">UX Designer in Visual Artificial Intelligence <span id="cursor">|</span></h3>
 					<br>
 					<p class="col-lg-10 mx-auto fs-5 text-muted" id="presentations">
-						I've always enjoyed studying human behavior and cognitive sciences. I'm also interested in technology and computer science, and I like to think about the interaction between people and machines in order to perfect them. This is why it was natural for me to turn to UX Design during my studies. 
+						I've always enjoyed studying human behavior and cognitive science. I'm also interested in technology and computer science, and like to think about the interactions between humans and machines in order to perfect them. So it was quite natural for me to turn to UX Design during my studies. 
 						</br>
 						</br>
-						 I'm currently finishing my final year of engineering school in Cognitics, and doing my end-of-studies internship at 
-						<a href="https://alteia.com/" target="_blank"  class="primary-color">Alteia</a>, a company specializing in visual Artificial Intelligence. This experience confirmed my desire to pursue UX Design and user-centered design after school.  
+						As part of my Cognitive Engineering course, I did my end-of-studies internship with 
+						<a href="https://alteia.com/" target="_blank"  class="primary-color">Alteia</a>, a company specializing in visual Artificial Intelligence. This experience confirmed my desire to pursue UX Design, user-centered design and IT after school.  
 						</br>
 						</br>
-						 I'm therefore looking for a job opportunity as a UX Designer, preferably in the AI or healthcare field, starting in September.
+						I'm therefore looking for a job opportunity as a UX Designer, preferably in the field of AI or healthcare.
+
 					</p>
 				</div>
 			</div>
@@ -932,6 +933,7 @@
 	lienAlteia.href = "https://alteia.com/";
 	lienAlteia.textContent = "Alteia";
 	lienAlteia.target = "_blank"; // Ajout de l'attribut target="_blank"
+	lienAlteia.className = "primary-color";
   	const soustitre = document.getElementById("sous-titre");
 	const titre_section2 = document.getElementById("titre_section2");
 	const colonneTools = document.getElementById("colonneTools");
@@ -959,7 +961,7 @@
 	  menuUX[6].innerHTML = "Méthode agile";
 
       bouton_cv.innerHTML = 'Voir mon CV';
-      presentationContenu.innerHTML ="J'ai toujours aimé étudier le comportement humain et les sciences cognitives. Également intéréssée par les technologies et l'informatique, j'aime réflèchir aux intéractions entre hommes et machines afin de les parfaire. C'est donc tout naturellement que je me suis tournée vers l'UX Design pendant mes études. </br> </br> Actuellement en train de finir ma dernière année d'école d'ingénieur en Cognitique, j'effectue mon stage de fin d'études à "+ lienAlteia.outerHTML + " , une entreprise spécialisée dans l'Intelligence Artificielle visuelle. Cette expérience me conforte dans mon envie de poursuivre dans l'UX Design et la conception centrée utilisateurs après l'école. </br> </br>  Je recherche donc une opportunité pour un emploi en tant qu' UX Designeur dans le domaine de l'IA ou de la santé de préfèrence, dès le mois de Septembre.";
+      presentationContenu.innerHTML ="J'ai toujours aimé étudier le comportement humain et les sciences cognitives. Également intéressée par les technologies et l'informatique, j'aime réfléchir aux interactions entre hommes et machines afin de les parfaire. C'est donc tout naturellement que je me suis tournée vers l'UX Design pendant mes études. </br> </br> Dans le cadre de mon cursus en école d’ingénieur en cognitique, j’ai réalisé mon stage de fin d’études chez "+ lienAlteia.outerHTML + ", une entreprise spécialisée dans l'Intelligence Artificielle visuelle. Cette expérience me conforte dans mon envie de poursuivre dans l'UX Design, la conception centrée utilisateurs et l’informatique. </br> </br>  Je recherche donc une opportunité pour un emploi en tant qu' UX Designeur dans le domaine de l'IA ou de la santé de préférence.";
       presentationEnsc.innerHTML ="Diplôme d'ingénieur à l'Ecole Nationale Supérieure de Cognitique (ENSC) de Bordeaux  ";
       presentationMIASHS.innerHTML="Licence de Mathématiques et Informatique appliquées aux Sciences Humaines et Sociales (MIASHS) spécialité sciences cognitices à l'Université de Lille";
       descriptionLaval.innerHTML="Programme d'échange universitaire dans le département Génie Logiciel de l'université Laval à Québec";
@@ -1041,7 +1043,7 @@
       detailsLAVAL.innerHTML="View details >>";
 
       bouton_cv.innerHTML = 'View CV';
-      presentationContenu.innerHTML ="I've always enjoyed studying human behavior and cognitive sciences. I'm also interested in technology and computer science, and I like to think about the interaction between people and machines in order to perfect them. This is why it was natural for me to turn to UX Design during my studies. </br> </br> I'm currently finishing my final year of engineering school in Cognitics, and doing my end-of-studies internship at "+ lienAlteia.outerHTML + ", a company specializing in visual Artificial Intelligence. This experience confirmed my desire to pursue UX Design and user-centered design after school.  </br> </br>  I'm therefore looking for a job opportunity as a UX Designer, preferably in the AI or healthcare field, starting in September.";
+      presentationContenu.innerHTML ="I've always enjoyed studying human behavior and cognitive science. I'm also interested in technology and computer science, and like to think about the interactions between humans and machines in order to perfect them. So it was quite natural for me to turn to UX Design during my studies.</br> </br> As part of my Cognitive Engineering course, I did my end-of-studies internship with "+ lienAlteia.outerHTML + ", a company specializing in visual Artificial Intelligence. This experience confirmed my desire to pursue UX Design, user-centered design and IT.  </br> </br>  I'm therefore looking for a job opportunity as a UX Designer, preferably in the field of AI or healthcare.";
       menuUX[0].innerHTML = 'User-Centered Design';
       menuUX[2].innerHTML = 'Mockup - Figma';
       menuUX[3].innerHTML = "HMI Design";
