@@ -10,7 +10,19 @@
 
 		gtag('config', 'G-T4PKC4T6JK');
 		</script>
-
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+			  document.querySelectorAll(".card").forEach(function(card) {
+				card.addEventListener("click", function() {
+				  let modalId = card.getAttribute("data-bs-target"); // Récupère l'ID du modal lié
+				  gtag('event', 'click_project_card', {
+					'event_category': 'Project',
+					'event_label': modalId
+				  });
+				});
+			  });
+			});
+		  </script>
 		<script src="assets/js/color-modes.js"></script>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
